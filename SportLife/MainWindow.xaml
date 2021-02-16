@@ -1,0 +1,25 @@
+﻿<Window x:Class="SportLife.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SportLife"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+       
+        Title="MainWindow" Height="700" Width="900">
+    <Grid>
+        <Frame x:Name="Main" Margin="170 0 0 0" NavigationUIVisibility="Hidden"/>
+        <Rectangle Fill="#FF06062E" HorizontalAlignment="Left" Height="0" Margin="65.8,65.4,0,0" VerticalAlignment="Top" Width="12"/>
+        <Rectangle Fill="#FFA61956" HorizontalAlignment="Left" Height="670.8" VerticalAlignment="Top" Width="170"/>
+        <TextBlock HorizontalAlignment="Center" Height="59.2" Margin="-3,579.1,729,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Foreground="Black" FontWeight="Bold" TextAlignment="Center" FontFamily="Verdana" FontSize="14"><Run Text="Oblicz sw"/><Run Text="oje zapotrzebowanie kaloryczne"/></TextBlock>
+        <Button x:Name="tdee"  HorizontalAlignment="Left" Margin="33.3,503.7,0,0" VerticalAlignment="Top" Width="91.8" Height="70.4" Click="TDEEbuttonclick" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="scales.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+
+
+
+</Window>
