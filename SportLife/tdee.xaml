@@ -15,7 +15,7 @@
         <Rectangle Fill="#FF6C136C" HorizontalAlignment="Left" Height="270.3" Margin="410.4,55.5,0,0" VerticalAlignment="Top" Width="240"/>
         <Rectangle Fill="#FF6C136C" HorizontalAlignment="Left" Height="270.3" Margin="410.4,381.3,0,0" VerticalAlignment="Top" Width="240"/>
         <TextBlock HorizontalAlignment="Left" Margin="73.443,77.12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.214,0.545" FontFamily="Verdana" FontWeight="Bold"><Run Text="Enter your current weight"/><Run Text="  ("/><Run Text="kg"/><Run Text=")"/><LineBreak/><Run Text=""/></TextBlock>
-        <TextBox x:Name="weight" HorizontalAlignment="Left" Height="25" Margin="105.2,101.967,0,0" TextWrapping="Wrap" TextAlignment="Center"  VerticalAlignment="Top" Width="150" BorderThickness="3">
+        <TextBox x:Name="weight" HorizontalAlignment="Left" Height="25" Margin="106,102,0,0" TextWrapping="Wrap" TextAlignment="Center"  VerticalAlignment="Top" Width="150" BorderThickness="3" PreviewTextInput="weight_previewtextinput">
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -24,7 +24,7 @@
             </TextBox.BorderBrush>
         </TextBox>
         <TextBlock HorizontalAlignment="Left" Margin="126.683,153.936,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.214,0.545" FontFamily="Verdana" FontWeight="Bold"><Run Text="Enter your "/><Run Text="age"/></TextBlock>
-        <TextBox x:Name="age" HorizontalAlignment="Left" Height="25" Margin="105.2,186.049,0,0" TextWrapping="Wrap" TextAlignment="Center"  VerticalAlignment="Top" Width="150" BorderThickness="3">
+        <TextBox x:Name="age" HorizontalAlignment="Left" Height="25" Margin="105.2,186.049,0,0" TextWrapping="Wrap" TextAlignment="Center"  VerticalAlignment="Top" Width="150" BorderThickness="3" PreviewTextInput="age_previewtextinput">
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -33,7 +33,7 @@
             </TextBox.BorderBrush>
         </TextBox>
         <TextBlock HorizontalAlignment="Left" Margin="77.429,234.003,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.214,0.545" FontFamily="Verdana" FontWeight="Bold"><Run Text="Enter your current "/><Run Text="he"/><Run Text="ight"/><Run Text=" (cm)"/><LineBreak/><Run Text=""/></TextBlock>
-        <TextBox x:Name="height" HorizontalAlignment="Left" Height="25" Margin="105.2,270.049,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="150" BorderThickness="3">
+        <TextBox x:Name="height" HorizontalAlignment="Left" Height="25" Margin="105.2,270.049,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="150" BorderThickness="3" PreviewTextInput="height_previewtextinput">
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
