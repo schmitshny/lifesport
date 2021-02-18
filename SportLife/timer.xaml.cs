@@ -15,23 +15,14 @@ using System.Windows.Shapes;
 
 namespace SportLife
 {
-
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Interaction logic for timer.xaml
+    /// </summary>
+    public partial class timer : Page
     {
-        public MainWindow()
+        public timer()
         {
             InitializeComponent();
-            Main.Content = new login();
-        }
-
-        private void TDEEbuttonclick(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new tdee();
-        }
-
-        private void RunningButtonclick(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new running();
         }
     }
 }

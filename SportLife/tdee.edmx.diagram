@@ -7,6 +7,8 @@
       <Diagram DiagramId="22a5b0ae68994762abdc294840c6fadc" Name="Diagram1">
         <EntityTypeShape EntityType="databaseModel.macrosandtdee" Width="1.5" PointX="3.375" PointY="0.75" />
         <EntityTypeShape EntityType="databaseModel.MEASURES" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="databaseModel.RUNSSTATISTICS" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="databaseModel.TDEEDATA" Width="1.5" PointX="3.75" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

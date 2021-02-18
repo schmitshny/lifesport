@@ -62,7 +62,7 @@ namespace SportLife
 
             if (this.weight.Text == "" || this.age.Text == "" || this.height.Text == "" || this.weightChange.Text == "" || this.activityfactor.Text == "" || this.weightChange.Text == "")
             {
-                MessageBox.Show("Please enter all data");
+                Xceed.Wpf.Toolkit.MessageBox.Show("Please enter all data");
             }
             else
             {

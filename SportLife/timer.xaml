@@ -1,0 +1,15 @@
+﻿<Page x:Class="SportLife.timer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SportLife"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="730"
+      Title="timer">
+
+    <Grid>
+        <Rectangle Fill="#FF130020" HorizontalAlignment="Left" Height="700" VerticalAlignment="Top" Width="730"/>
+
+    </Grid>
+</Page>

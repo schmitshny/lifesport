@@ -41,17 +41,12 @@
                 </LinearGradientBrush>
             </TextBox.BorderBrush>
         </TextBox>
-        <ComboBox x:Name="activityfactor" HorizontalAlignment="Left" Margin="105.2,358.999,0,0" VerticalAlignment="Top" Width="150" FontFamily="Verdana">
+        <ComboBox x:Name="activityfactor" HorizontalAlignment="Left" Margin="105.2,370.199,0,0" VerticalAlignment="Top" Width="150" FontFamily="Verdana">
             <ComboBoxItem>Sedentary (little to no exercise + work a desk job)</ComboBoxItem>
             <ComboBoxItem>Lightly Active (light exercise 1-3 days / week)</ComboBoxItem>
             <ComboBoxItem>Moderately Active (moderate exercise 3-5 days / week)</ComboBoxItem>
             <ComboBoxItem>Very Active (heavy exercise 6-7 days / week)</ComboBoxItem>
-            <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" FontFamily="Verdana">
-                <ComboBoxItem Content="Sedentary (little to no exercise + work a desk job)"/>
-                <ComboBoxItem Content="Lightly Active (light exercise 1-3 days / week)"/>
-                <ComboBoxItem Content="Moderately Active (moderate exercise 3-5 days / week)"/>
-                <ComboBoxItem Content="Very Active (heavy exercise 6-7 days / week)"/>
-            </ComboBox>
+           
         </ComboBox>
         <TextBlock HorizontalAlignment="Left" Margin="130.933,324.833,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.214,0.545" FontFamily="Verdana" FontWeight="Bold"><Run Text="Activity factor"/><LineBreak/><Run/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="97.623,417.166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.214,0.545" FontFamily="Verdana" FontWeight="Bold" TextAlignment="Center"><Run Text="Your goal weight change"/><LineBreak/><Run Text=" per week (kg)" /></TextBlock>

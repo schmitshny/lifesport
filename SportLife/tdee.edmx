@@ -28,9 +28,31 @@
           <Property Name="activity" Type="int" />
           <Property Name="weightchange" Type="int" />
         </EntityType>
+        <EntityType Name="RUNSSTATISTICS">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="distance" Type="int" />
+          <Property Name="time" Type="time" Precision="7" />
+          <Property Name="date" Type="date" />
+        </EntityType>
+        <EntityType Name="TDEEDATA">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="weight" Type="int" />
+          <Property Name="age" Type="int" />
+          <Property Name="height" Type="int" />
+          <Property Name="actvity" Type="float" />
+          <Property Name="weightchange" Type="float" />
+        </EntityType>
         <EntityContainer Name="databaseModelStoreContainer">
           <EntitySet Name="macrosandtdee" EntityType="Self.macrosandtdee" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MEASURES" EntityType="Self.MEASURES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RUNSSTATISTICS" EntityType="Self.RUNSSTATISTICS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TDEEDATA" EntityType="Self.TDEEDATA" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -39,6 +61,8 @@
         <EntityContainer Name="databaseEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="macrosandtdee" EntityType="databaseModel.macrosandtdee" />
           <EntitySet Name="MEASURES" EntityType="databaseModel.MEASURES" />
+          <EntitySet Name="RUNSSTATISTICS" EntityType="databaseModel.RUNSSTATISTICS" />
+          <EntitySet Name="TDEEDATA" EntityType="databaseModel.TDEEDATA" />
         </EntityContainer>
         <EntityType Name="macrosandtdee">
           <Key>
@@ -62,6 +86,26 @@
           <Property Name="height" Type="Int32" />
           <Property Name="activity" Type="Int32" />
           <Property Name="weightchange" Type="Int32" />
+        </EntityType>
+        <EntityType Name="RUNSSTATISTICS">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="distance" Type="Int32" />
+          <Property Name="time" Type="Time" Precision="7" />
+          <Property Name="date" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="TDEEDATA">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="weight" Type="Int32" />
+          <Property Name="age" Type="Int32" />
+          <Property Name="height" Type="Int32" />
+          <Property Name="actvity" Type="Double" />
+          <Property Name="weightchange" Type="Double" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -87,6 +131,28 @@
               <MappingFragment StoreEntitySet="MEASURES">
                 <ScalarProperty Name="weightchange" ColumnName="weightchange" />
                 <ScalarProperty Name="activity" ColumnName="activity" />
+                <ScalarProperty Name="height" ColumnName="height" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="weight" ColumnName="weight" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RUNSSTATISTICS">
+            <EntityTypeMapping TypeName="databaseModel.RUNSSTATISTICS">
+              <MappingFragment StoreEntitySet="RUNSSTATISTICS">
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="time" ColumnName="time" />
+                <ScalarProperty Name="distance" ColumnName="distance" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TDEEDATA">
+            <EntityTypeMapping TypeName="databaseModel.TDEEDATA">
+              <MappingFragment StoreEntitySet="TDEEDATA">
+                <ScalarProperty Name="weightchange" ColumnName="weightchange" />
+                <ScalarProperty Name="actvity" ColumnName="actvity" />
                 <ScalarProperty Name="height" ColumnName="height" />
                 <ScalarProperty Name="age" ColumnName="age" />
                 <ScalarProperty Name="weight" ColumnName="weight" />

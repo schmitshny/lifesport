@@ -27,5 +27,7 @@ namespace SportLife
     
         public virtual DbSet<macrosandtdee> macrosandtdee { get; set; }
         public virtual DbSet<MEASURES> MEASURES { get; set; }
+        public virtual DbSet<RUNSSTATISTICS> RUNSSTATISTICS { get; set; }
+        public virtual DbSet<TDEEDATA> TDEEDATA { get; set; }
     }
 }
