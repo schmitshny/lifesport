@@ -19,10 +19,10 @@
             </Rectangle.Fill>
         </Rectangle>
         <TextBox  x:Name="usernametextbox" MaxLength="15" HorizontalAlignment="Left" BorderThickness="0.5" Height="35" Margin="199.2,328.8,0,0" 
-                 TextAlignment="Left"  Text="username"  VerticalAlignment="Top" FontSize="30"  Background="Transparent"  FontFamily="Helvetica"  Opacity="0.5" Width="314.4"
+                 TextAlignment="Left"  Text="admin"  VerticalAlignment="Top" FontSize="30"  Background="Transparent"  FontFamily="Helvetica"  Opacity="0.5" Width="314.4"
                  BorderBrush="Pink"/>
         <PasswordBox x:Name="passwordtextbox" MaxLength="15" HorizontalAlignment="Left" BorderThickness="0.5" Height="35" Margin="199.2,387.6,0,0" 
-              Password="username"  VerticalAlignment="Top" FontSize="30"  Background="Transparent"  FontFamily="Helvetica"  Opacity="0.5" Width="314.4"
+              Password="admin"  VerticalAlignment="Top" FontSize="30"  Background="Transparent"  FontFamily="Helvetica"  Opacity="0.5" Width="314.4"
             BorderBrush="Pink"/>
         <Button x:Name="loginbutton" Content="login" Margin="199.2,450.3,382.533,179.767"
                 FontSize="17" Click="loginbutton_Click"/>

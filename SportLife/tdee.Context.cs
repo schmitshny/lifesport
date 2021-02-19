@@ -30,5 +30,6 @@ namespace SportLife
         public virtual DbSet<RUNSSTATISTICS> RUNSSTATISTICS { get; set; }
         public virtual DbSet<TDEEDATA> TDEEDATA { get; set; }
         public virtual DbSet<users> users { get; set; }
+        public virtual DbSet<statisticRuns> statisticRuns { get; set; }
     }
 }

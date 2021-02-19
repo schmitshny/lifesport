@@ -27,6 +27,12 @@ namespace SportLife
 
         private void registeruser_Click(object sender, RoutedEventArgs e)
         {
+            databaseEntities db = new databaseEntities();
+
+            var usernameexists = from d in db.users
+                                 where d.login == username.Text
+                                 select d;
+
             if(username.Text.Length==0)
             {
                 Xceed.Wpf.Toolkit.MessageBox.Show("Enter a login");
@@ -47,9 +53,14 @@ namespace SportLife
                 Xceed.Wpf.Toolkit.MessageBox.Show("Passwords are not the same");
                 pass.Focus();
             }
+            else if ( usernameexists!=null)
+            {
+                Xceed.Wpf.Toolkit.MessageBox.Show("Username is already taken");
+                username.Focus();
+
+            }
             else
             {
-                databaseEntities db = new databaseEntities();
                 users newuser = new users()
                 {
                     login = username.Text,
@@ -59,6 +70,8 @@ namespace SportLife
                 db.users.Add(newuser);
                 db.SaveChanges();
                 Xceed.Wpf.Toolkit.MessageBox.Show("Registration completed");
+                var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
+                mw.Main.Content = new login();
             }
         }
     }

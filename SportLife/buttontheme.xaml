@@ -16,7 +16,7 @@
                                                                       BorderBrush="Wheat">
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Border>
-                </ControlTemplate>
+                </ControlTemplate> 
             </Setter.Value>
             
         </Setter>

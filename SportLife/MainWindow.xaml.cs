@@ -19,6 +19,7 @@ namespace SportLife
     public partial class MainWindow : Window
     {
         public bool isLoggedIn { get; set; } = false;
+        public int currentuserID { get; set; }
 
         public MainWindow()
         {
@@ -37,6 +38,19 @@ namespace SportLife
                 Xceed.Wpf.Toolkit.MessageBox.Show("You need to log in");
             }
         }
+        private void timer_Click(object sender, RoutedEventArgs e)
+        {
+            if(isLoggedIn==true)
+            {
+                Main.Content = new timer();
+            }
+            else
+            {
+                Xceed.Wpf.Toolkit.MessageBox.Show("You need to log in");
+
+            }
+
+        }
 
         private void RunningButtonclick(object sender, RoutedEventArgs e)
         {
@@ -50,5 +64,7 @@ namespace SportLife
             }
             
         }
+
+        
     }
 }

@@ -44,9 +44,10 @@ namespace SportLife
 
             if (myUser != null)
             {
-                Xceed.Wpf.Toolkit.MessageBox.Show("you are loged in");
+                Xceed.Wpf.Toolkit.MessageBox.Show("You are logged in");
                 var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
                 mw.isLoggedIn = true;
+                mw.currentuserID = myUser.Id;
             }
             else
             {

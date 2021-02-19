@@ -37,6 +37,16 @@
           <Property Name="time" Type="time" Precision="7" />
           <Property Name="date" Type="date" />
         </EntityType>
+        <EntityType Name="statisticRuns">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="distance" Type="int" />
+          <Property Name="time" Type="time" Precision="7" />
+          <Property Name="date" Type="date" />
+          <Property Name="userID" Type="int" />
+        </EntityType>
         <EntityType Name="TDEEDATA">
           <Key>
             <PropertyRef Name="Id" />
@@ -60,6 +70,7 @@
           <EntitySet Name="macrosandtdee" EntityType="Self.macrosandtdee" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MEASURES" EntityType="Self.MEASURES" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="RUNSSTATISTICS" EntityType="Self.RUNSSTATISTICS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="statisticRuns" EntityType="Self.statisticRuns" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TDEEDATA" EntityType="Self.TDEEDATA" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
@@ -73,6 +84,7 @@
           <EntitySet Name="RUNSSTATISTICS" EntityType="databaseModel.RUNSSTATISTICS" />
           <EntitySet Name="TDEEDATA" EntityType="databaseModel.TDEEDATA" />
           <EntitySet Name="users" EntityType="databaseModel.users" />
+          <EntitySet Name="statisticRuns" EntityType="databaseModel.statisticRuns" />
         </EntityContainer>
         <EntityType Name="macrosandtdee">
           <Key>
@@ -124,6 +136,16 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="login" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="password" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="statisticRuns">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="distance" Type="Int32" />
+          <Property Name="time" Type="Time" Precision="7" />
+          <Property Name="date" Type="DateTime" Precision="0" />
+          <Property Name="userID" Type="Int32" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -183,6 +205,17 @@
               <MappingFragment StoreEntitySet="users">
                 <ScalarProperty Name="password" ColumnName="password" />
                 <ScalarProperty Name="login" ColumnName="login" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="statisticRuns">
+            <EntityTypeMapping TypeName="databaseModel.statisticRuns">
+              <MappingFragment StoreEntitySet="statisticRuns">
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="time" ColumnName="time" />
+                <ScalarProperty Name="distance" ColumnName="distance" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

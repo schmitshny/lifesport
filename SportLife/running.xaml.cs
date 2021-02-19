@@ -22,21 +22,18 @@ namespace SportLife
     /// </summary>
     public partial class running : Page
     {
+        databaseEntities db = new databaseEntities();
+
         public running()
         {
             InitializeComponent();
 
-            databaseEntities db = new databaseEntities();
+            var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
 
-            var stats = from d in db.RUNSSTATISTICS
-                        select d;
-            /*
-            select new
-            {
-                Distance = d.distance,
-                Time = d.time,
-                Date = d.date
-            };*/
+            var stats = from d in db.statisticRuns
+                        where d.userID == mw.currentuserID
+                     select d;
+            
 
             this.gridruns.ItemsSource = stats.ToList();
             startingDate.SelectedDate = new DateTime(2021,01,01);
@@ -46,7 +43,8 @@ namespace SportLife
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            databaseEntities db = new databaseEntities();
+            var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
+
 
             if (this.distTextbox.Text == "" || this.timeTextBox.Text == "")
             {
@@ -56,21 +54,24 @@ namespace SportLife
             {
 
             
-            RUNSSTATISTICS newRecord = new RUNSSTATISTICS()
+            statisticRuns newRecord = new statisticRuns()
             {
                 distance = int.Parse(distTextbox.Text),
                 time = TimeSpan.ParseExact(timeTextBox.Text, "hh\\:mm\\:ss", null),
-                date = Calendar.SelectedDate
-
+                date = Calendar.SelectedDate,
+                userID = mw.currentuserID
+                
             };
 
-            db.RUNSSTATISTICS.Add(newRecord);
+            db.statisticRuns.Add(newRecord);
             db.SaveChanges();
 
-            var stats = from d in db.RUNSSTATISTICS
-                       select d;
+                var stats = from d in db.statisticRuns
+                            where d.userID == mw.currentuserID
+                            select d;
 
-            this.gridruns.ItemsSource = stats.ToList();
+
+                this.gridruns.ItemsSource = stats.ToList();
             }
         }
 
@@ -87,9 +88,9 @@ namespace SportLife
             {
                 if(this.gridruns.SelectedItems.Count>=0)
                 {
-                    if(this.gridruns.SelectedItems[0].GetType()==typeof(RUNSSTATISTICS))
+                    if(this.gridruns.SelectedItems[0].GetType()==typeof(statisticRuns))
                     {
-                        RUNSSTATISTICS x = (RUNSSTATISTICS)this.gridruns.SelectedItems[0];
+                        statisticRuns x = (statisticRuns)this.gridruns.SelectedItems[0];
                         this.distTextboxUpadte.Text = x.distance.ToString(); ;
                         this.timeTextboxUpdate.Text = x.time.ToString();
                         this.DateUpdate.SelectedDate = x.date;
@@ -101,13 +102,13 @@ namespace SportLife
 
         private void updateButton_Click(object sender, RoutedEventArgs e)
         {
-            databaseEntities db = new databaseEntities();
+            var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
 
-            var x = from d in db.RUNSSTATISTICS
+            var x = from d in db.statisticRuns
                     where d.Id == this.updatingRunID
                     select d;
 
-            RUNSSTATISTICS obj = x.SingleOrDefault();
+            statisticRuns obj = x.SingleOrDefault();
 
             if(obj!=null)
             {
@@ -116,28 +117,34 @@ namespace SportLife
                 obj.date = DateUpdate.SelectedDate;
                 db.SaveChanges();
             }
-            
-            var stats = from d in db.RUNSSTATISTICS
-                       select d;
+            var stats = from d in db.statisticRuns
+                        where d.userID == mw.currentuserID
+                        select d;
+
+
             this.gridruns.ItemsSource = stats.ToList();
         }
 
 
         private void deleteButton_Click(object sender, RoutedEventArgs e)
         {
-            databaseEntities db = new databaseEntities();
-            var x = from d in db.RUNSSTATISTICS
+            var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
+
+            var x = from d in db.statisticRuns
                     where d.Id == this.updatingRunID
                     select d;
 
-            RUNSSTATISTICS obj = x.SingleOrDefault();
+            statisticRuns obj = x.SingleOrDefault();
             if (obj != null)
             {
-                db.RUNSSTATISTICS.Remove(obj);
+                db.statisticRuns.Remove(obj);
                 db.SaveChanges();
             }
-            var stats = from d in db.RUNSSTATISTICS
+            var stats = from d in db.statisticRuns
+                        where d.userID == mw.currentuserID
                         select d;
+
+
             this.gridruns.ItemsSource = stats.ToList();
         }
 
@@ -150,16 +157,17 @@ namespace SportLife
 
         private void timeTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+          //  e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
 
         }
 
 
         private void startingDate_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
-            databaseEntities db = new databaseEntities();
-            var stats = from d in db.RUNSSTATISTICS
-                        where d.date >= startingDate.SelectedDate && d.date <=endDate.SelectedDate
+            var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
+
+            var stats = from d in db.statisticRuns
+                        where d.date >= startingDate.SelectedDate && d.date <=endDate.SelectedDate && d.userID==mw.currentuserID
                         select d;
 
             this.gridruns.ItemsSource = stats.ToList();
@@ -168,9 +176,10 @@ namespace SportLife
 
         private void endDate_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
-            databaseEntities db = new databaseEntities();
-            var stats = from d in db.RUNSSTATISTICS
-                        where d.date >= startingDate.SelectedDate && d.date <= endDate.SelectedDate
+            var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
+
+            var stats = from d in db.statisticRuns
+                        where d.date >= startingDate.SelectedDate && d.date <= endDate.SelectedDate && d.userID == mw.currentuserID
                         select d;
 
             this.gridruns.ItemsSource = stats.ToList();

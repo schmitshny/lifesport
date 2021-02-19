@@ -52,7 +52,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
@@ -91,6 +93,9 @@
       <DependentUpon>running.xaml</DependentUpon>
     </Compile>
     <Compile Include="RUNSSTATISTICS.cs">
+      <DependentUpon>tdee.tt</DependentUpon>
+    </Compile>
+    <Compile Include="statisticRuns.cs">
       <DependentUpon>tdee.tt</DependentUpon>
     </Compile>
     <Compile Include="tdee.Context.cs">
@@ -206,6 +211,7 @@
       <DependentUpon>database.mdf</DependentUpon>
     </Content>
     <Resource Include="runicon.png" />
+    <Resource Include="stopwatch.png" />
     <Content Include="tdee.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>tdee.edmx</DependentUpon>
