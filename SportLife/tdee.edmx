@@ -48,11 +48,20 @@
           <Property Name="actvity" Type="float" />
           <Property Name="weightchange" Type="float" />
         </EntityType>
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="login" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="password" Type="nvarchar" MaxLength="20" Nullable="false" />
+        </EntityType>
         <EntityContainer Name="databaseModelStoreContainer">
           <EntitySet Name="macrosandtdee" EntityType="Self.macrosandtdee" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MEASURES" EntityType="Self.MEASURES" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="RUNSSTATISTICS" EntityType="Self.RUNSSTATISTICS" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TDEEDATA" EntityType="Self.TDEEDATA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -63,6 +72,7 @@
           <EntitySet Name="MEASURES" EntityType="databaseModel.MEASURES" />
           <EntitySet Name="RUNSSTATISTICS" EntityType="databaseModel.RUNSSTATISTICS" />
           <EntitySet Name="TDEEDATA" EntityType="databaseModel.TDEEDATA" />
+          <EntitySet Name="users" EntityType="databaseModel.users" />
         </EntityContainer>
         <EntityType Name="macrosandtdee">
           <Key>
@@ -106,6 +116,14 @@
           <Property Name="height" Type="Int32" />
           <Property Name="actvity" Type="Double" />
           <Property Name="weightchange" Type="Double" />
+        </EntityType>
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="login" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="password" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -156,6 +174,15 @@
                 <ScalarProperty Name="height" ColumnName="height" />
                 <ScalarProperty Name="age" ColumnName="age" />
                 <ScalarProperty Name="weight" ColumnName="weight" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="databaseModel.users">
+              <MappingFragment StoreEntitySet="users">
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="login" ColumnName="login" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

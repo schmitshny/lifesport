@@ -18,6 +18,8 @@ namespace SportLife
 
     public partial class MainWindow : Window
     {
+        public bool isLoggedIn { get; set; } = false;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -26,12 +28,27 @@ namespace SportLife
 
         private void TDEEbuttonclick(object sender, RoutedEventArgs e)
         {
-            Main.Content = new tdee();
+            if (isLoggedIn == true)
+            {
+                Main.Content = new tdee();
+            }
+            else
+            {
+                Xceed.Wpf.Toolkit.MessageBox.Show("You need to log in");
+            }
         }
 
         private void RunningButtonclick(object sender, RoutedEventArgs e)
         {
-            Main.Content = new running();
+            if(isLoggedIn==true)
+            {
+                Main.Content = new running();
+            }
+            else
+            {
+                Xceed.Wpf.Toolkit.MessageBox.Show("You need to log in");
+            }
+            
         }
     }
 }

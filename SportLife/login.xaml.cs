@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.OleDb;
 
 namespace SportLife
 {
@@ -23,6 +24,35 @@ namespace SportLife
         public login()
         {
             InitializeComponent();
+        }
+
+        private void registerpage_Click(object sender, RoutedEventArgs e)
+        {
+            var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
+
+            mw.Main.Content = new register();
+
+        }
+
+        
+
+        private void loginbutton_Click(object sender, RoutedEventArgs e)
+        {
+            databaseEntities db = new databaseEntities();
+
+            var myUser = db.users.FirstOrDefault(u => u.login == usernametextbox.Text && u.password == passwordtextbox.Password);
+
+            if (myUser != null)
+            {
+                Xceed.Wpf.Toolkit.MessageBox.Show("you are loged in");
+                var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
+                mw.isLoggedIn = true;
+            }
+            else
+            {
+                Xceed.Wpf.Toolkit.MessageBox.Show("Invalid password or username");
+            }
+
         }
     }
 }

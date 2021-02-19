@@ -48,7 +48,7 @@ namespace SportLife
         {
             databaseEntities db = new databaseEntities();
 
-            if (this.distTextbox.Text == "" || this.timeTextBox.Text == "" )
+            if (this.distTextbox.Text == "" || this.timeTextBox.Text == "")
             {
                 Xceed.Wpf.Toolkit.MessageBox.Show("Please enter all data");
             }
