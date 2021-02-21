@@ -10,6 +10,13 @@
 
     <Grid>
         <Rectangle Fill="#FF130020" HorizontalAlignment="Left" Height="700" VerticalAlignment="Top" Width="730"/>
+        <Button x:Name="StartButton" Content="START" HorizontalAlignment="Left" Margin="50.4,499.5,0,0" VerticalAlignment="Top" Width="197.4" Height="66.4"
+                Click="StartButton_Click"/>
+        <Button x:Name="StopButton" Content="STOP" HorizontalAlignment="Left" Margin="270,499.5,0,0" VerticalAlignment="Top" Width="197.4" Height="66.4"
+                Click="StopButton_Click"/>
+        <Button x:Name="ResetButton" Content="RESET" HorizontalAlignment="Left" Margin="487.2,499.5,0,0" VerticalAlignment="Top" Width="197.4" Height="66.4"
+                Click="ResetButton_Click"/>
+        <TextBlock x:Name="stopwatchText" HorizontalAlignment="Left" Margin="122.71,197.1,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Height="170.76" Width="607.29" FontSize="130" Foreground="#FF7C3C3C"/>
 
     </Grid>
 </Page>

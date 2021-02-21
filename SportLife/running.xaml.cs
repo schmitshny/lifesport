@@ -49,6 +49,7 @@ namespace SportLife
             if (this.distTextbox.Text == "" || this.timeTextBox.Text == "")
             {
                 Xceed.Wpf.Toolkit.MessageBox.Show("Please enter all data");
+                
             }
             else
             {
@@ -153,12 +154,6 @@ namespace SportLife
         private void distTextbox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
-        }
-
-        private void timeTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
-        {
-          //  e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
-
         }
 
 

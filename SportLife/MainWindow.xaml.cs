@@ -65,6 +65,11 @@ namespace SportLife
             
         }
 
-        
+        private void logoutbutton_Click(object sender, RoutedEventArgs e)
+        {
+            isLoggedIn = false;
+            Xceed.Wpf.Toolkit.MessageBox.Show("You are now logged out");
+            Main.Content = new login();
+        }
     }
 }
