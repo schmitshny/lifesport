@@ -21,6 +21,9 @@ namespace SportLife
     /// </summary>
     public partial class tdee : Page
     {
+        /// <summary>
+        /// TDEE contruktor which makes connection with database
+        /// </summary>
         public tdee()
         {
             InitializeComponent();
@@ -53,12 +56,13 @@ namespace SportLife
         }
 
 
-
+        /// <summary>
+        /// Calculates the your daily caloric intake, the number of calories which you need to lower/increase to lose/gain weight and how much calories, carbs, fats, proteins you need to eat therefore, 
+        /// </summary>
+        /// <param name="sender">The object which invoked the method/event/delegate</param>
+        /// <param name="e">State information and event data associated with a routed event.</param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-
-
 
             if (this.weight.Text == "" || this.age.Text == "" || this.height.Text == "" || this.weightChange.Text == "" || this.activityfactor.Text == "" || this.weightChange.Text == "")
             {
@@ -148,8 +152,6 @@ namespace SportLife
                 obj.activity = activityfactor.SelectedIndex;
                 obj.weightchange = weightChange.SelectedIndex;
 
-                /////
-                ///
                 var query_2 = (from x in db.macrosandtdee
                                where x.Id == 1
                                select x);
@@ -166,26 +168,30 @@ namespace SportLife
                 db.SaveChanges();
 
 
-
-
             }
-
-            
-
-            
-
+           
+         
         }
+        /// <summary>
+        /// Allows the user enter only the numbers in weight textbox
+        /// </summary>
 
         private void weight_previewtextinput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
            
         }
+        /// <summary>
+        /// allows the user enter only the numbers in age textbox
+        /// </summary>
 
         private void age_previewtextinput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
         }
+        /// <summary>
+        /// allows the user enter only the numbers in height textbox
+        /// </summary>
 
         private void height_previewtextinput(object sender, TextCompositionEventArgs e)
         {

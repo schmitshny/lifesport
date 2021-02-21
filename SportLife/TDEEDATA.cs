@@ -11,7 +11,10 @@ namespace SportLife
 {
     using System;
     using System.Collections.Generic;
-    
+
+    /// <summary>
+    /// Gets and sets informations about your diet informations from/in database
+    /// </summary>
     public partial class TDEEDATA
     {
         public int Id { get; set; }

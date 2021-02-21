@@ -11,7 +11,10 @@ namespace SportLife
 {
     using System;
     using System.Collections.Generic;
-    
+
+    /// <summary>
+    /// Gets and sets informations about runs statistics from/in database
+    /// </summary>
     public partial class statisticRuns
     {
         public int Id { get; set; }

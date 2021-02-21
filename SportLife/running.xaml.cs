@@ -22,8 +22,15 @@ namespace SportLife
     /// </summary>
     public partial class running : Page
     {
+        /// <summary>
+        /// Establish connection with database
+        /// </summary>
         databaseEntities db = new databaseEntities();
 
+
+        /// <summary>
+        /// Constructor which loads our runs statistics in datagrid
+        /// </summary>
         public running()
         {
             InitializeComponent();
@@ -41,7 +48,12 @@ namespace SportLife
 
         }
 
-        private void AddButton_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Adding our run stats to database 
+        /// </summary>
+        /// <param name="sender">The object which invoked the method/event/delegate</param>
+        /// <param name="e">State information and event data associated with a routed event.</param>
+        public void AddButton_Click(object sender, RoutedEventArgs e)
         {
             var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
 
@@ -82,7 +94,11 @@ namespace SportLife
         private int updatingRunID = 0;
 
 
-
+        /// <summary>
+        /// Show data which that we select in textboxes for updates
+        /// </summary>
+        /// <param name="sender">The object which invoked the method/event/delegate</param>
+        /// <param name="e">State information and event data associated with a routed event.</param>
         private void gridruns_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if(this.gridruns.SelectedIndex>=0)
@@ -100,7 +116,11 @@ namespace SportLife
                 }    
             }
         }
-
+        /// <summary>
+        /// Updates selected items and stores in database
+        /// </summary>
+        /// <param name="sender">The object which invoked the method/event/delegate</param>
+        /// <param name="e">State information and event data associated with a routed event.</param>
         private void updateButton_Click(object sender, RoutedEventArgs e)
         {
             var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
@@ -126,7 +146,11 @@ namespace SportLife
             this.gridruns.ItemsSource = stats.ToList();
         }
 
-
+        /// <summary>
+        /// Deletes selected data from database 
+        /// </summary>
+        /// <param name="sender">The object which invoked the method/event/delegate</param>
+        /// <param name="e">State information and event data associated with a routed event.</param>
         private void deleteButton_Click(object sender, RoutedEventArgs e)
         {
             var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
@@ -150,13 +174,17 @@ namespace SportLife
         }
 
 
-
+        /// <summary>
+        /// allows the user enter only the numbers in distance textbox
+        /// </summary>
         private void distTextbox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
         }
 
-
+        /// <summary>
+        /// Changes data in datagrid and shows items which values ​​matching the date range
+        /// </summary>
         private void startingDate_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
             var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
@@ -168,7 +196,9 @@ namespace SportLife
             this.gridruns.ItemsSource = stats.ToList();
 
         }
-
+        /// <summary>
+        /// Changes data in datagrid and shows items which values ​​matching the date range
+        /// </summary>
         private void endDate_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
             var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;

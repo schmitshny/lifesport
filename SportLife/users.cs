@@ -12,6 +12,9 @@ namespace SportLife
     using System;
     using System.Collections.Generic;
     
+    /// <summary>
+    /// Gets and sets informations about users from/in database
+    /// </summary>
     public partial class users
     {
         public int Id { get; set; }

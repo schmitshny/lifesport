@@ -24,7 +24,11 @@ namespace SportLife
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Registers new user, stores user login and password in database 
+        /// </summary>
+        /// <param name="sender">The object which invoked the method/event/delegate</param>
+        /// <param name="e">State information and event data associated with a routed event.</param>
         private void registeruser_Click(object sender, RoutedEventArgs e)
         {
             databaseEntities db = new databaseEntities();

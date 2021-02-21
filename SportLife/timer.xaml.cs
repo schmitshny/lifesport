@@ -27,7 +27,9 @@ namespace SportLife
         private Timer _timer;
         private const string _startTime = "00:00:00";
 
-
+        /// <summary>
+        /// Timer construcor, sets new Stopwatch, sets displaying time to 00:00:00, sets time interval on 1 secund
+        /// </summary>
         public timer()
         {
             InitializeComponent();
@@ -41,21 +43,33 @@ namespace SportLife
         {
             Application.Current.Dispatcher.Invoke(() =>  stopwatchText.Text = _stopwatch.Elapsed.ToString(format: @"hh\:mm\:ss"));
         }
-
+        /// <summary>
+        /// Starting the stopwatch
+        /// </summary>
+        /// <param name="sender">The object which invoked the method/event/delegate</param>
+        /// <param name="e">State information and event data associated with a routed event.</param>
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
             _stopwatch.Start();
             _timer.Start();
             ResetButton.IsEnabled = false;
         }
-
+        /// <summary>
+        /// Stops the stopwatch
+        /// </summary>
+        /// <param name="sender">The object which invoked the method/event/delegate</param>
+        /// <param name="e">State information and event data associated with a routed event.</param>
         private void StopButton_Click(object sender, RoutedEventArgs e)
         {
             _stopwatch.Stop();
             _timer.Stop();
             ResetButton.IsEnabled = true;
         }
-
+        /// <summary>
+        /// Resets the stopwatch
+        /// </summary>
+        /// <param name="sender">The object which invoked the method/event/delegate</param>
+        /// <param name="e">tate information and event data associated with a routed event.</param>
         private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
             _stopwatch.Reset();
