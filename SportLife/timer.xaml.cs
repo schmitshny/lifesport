@@ -1,19 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Timers;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace SportLife
 {
@@ -22,9 +10,11 @@ namespace SportLife
     /// </summary>
     public partial class timer : Page
     {
-
-        private Stopwatch _stopwatch;
-        private Timer _timer;
+        private readonly Stopwatch _stopwatch;
+        private readonly Timer  _timer;
+        /// <summary>
+        /// sets start time 00:00:00
+        /// </summary>
         private const string _startTime = "00:00:00";
 
         /// <summary>
@@ -38,11 +28,16 @@ namespace SportLife
             _timer = new Timer(interval: 1000);
             _timer.Elapsed += OnTimerElapse;
         }
-
+        /// <summary>
+        /// Sets time display setting hh:mm:ss
+        /// </summary>
+        /// <param name="sender">The object which invoked the method/event/delegate</param>
+        /// <param name="e">State information and event data associated with a routed event.</param>
         private void OnTimerElapse(object sender, ElapsedEventArgs e)
         {
-            Application.Current.Dispatcher.Invoke(() =>  stopwatchText.Text = _stopwatch.Elapsed.ToString(format: @"hh\:mm\:ss"));
+            Application.Current.Dispatcher.Invoke(() => stopwatchText.Text = _stopwatch.Elapsed.ToString(format: @"hh\:mm\:ss"));
         }
+
         /// <summary>
         /// Starting the stopwatch
         /// </summary>
@@ -54,6 +49,7 @@ namespace SportLife
             _timer.Start();
             ResetButton.IsEnabled = false;
         }
+
         /// <summary>
         /// Stops the stopwatch
         /// </summary>
@@ -65,6 +61,7 @@ namespace SportLife
             _timer.Stop();
             ResetButton.IsEnabled = true;
         }
+
         /// <summary>
         /// Resets the stopwatch
         /// </summary>

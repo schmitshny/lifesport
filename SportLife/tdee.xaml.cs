@@ -1,18 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace SportLife
 {
@@ -32,15 +22,15 @@ namespace SportLife
             var query = (from x in db.MEASURES
                          where x.Id == 1
                          select x).FirstOrDefault();
-            
-            if(query!=null)
-             { 
+
+            if (query != null)
+            {
                 weight.Text = query.weight.ToString();
                 age.Text = query.age.ToString();
                 height.Text = query.height.ToString();
                 activityfactor.SelectedIndex = (int)query.activity;
                 weightChange.SelectedIndex = (int)query.weightchange;
-             }
+            }
 
             var query_2 = (from x in db.macrosandtdee
                            where x.Id == 1
@@ -52,18 +42,15 @@ namespace SportLife
             protein.Text = query_2.protein.ToString();
             fat.Text = query_2.fat.ToString();
             carbs.Text = query_2.carbs.ToString();
-
         }
 
-
         /// <summary>
-        /// Calculates the your daily caloric intake, the number of calories which you need to lower/increase to lose/gain weight and how much calories, carbs, fats, proteins you need to eat therefore, 
+        /// Calculates the your daily caloric intake, the number of calories which you need to lower/increase to lose/gain weight and how much calories, carbs, fats, proteins you need to eat therefore,
         /// </summary>
         /// <param name="sender">The object which invoked the method/event/delegate</param>
         /// <param name="e">State information and event data associated with a routed event.</param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
             if (this.weight.Text == "" || this.age.Text == "" || this.height.Text == "" || this.weightChange.Text == "" || this.activityfactor.Text == "" || this.weightChange.Text == "")
             {
                 Xceed.Wpf.Toolkit.MessageBox.Show("Please enter all data");
@@ -71,7 +58,6 @@ namespace SportLife
             else
             {
                 this.tdee1.Text = "dsfsdffs";
-
 
                 int weight = int.Parse(this.weight.Text);
                 int age = int.Parse(this.age.Text);
@@ -83,15 +69,19 @@ namespace SportLife
                     case 0:
                         activity = 1.2;
                         break;
+
                     case 1:
                         activity = 1.375;
                         break;
+
                     case 2:
                         activity = 1.55;
                         break;
+
                     case 3:
                         activity = 1.725;
                         break;
+
                     default:
                         activity = 1.5;
                         break;
@@ -107,24 +97,31 @@ namespace SportLife
                     case 0:
                         def = -1.5;
                         break;
+
                     case 1:
                         def = -1;
                         break;
+
                     case 2:
                         def = -0.5;
                         break;
+
                     case 3:
                         def = 0;
                         break;
+
                     case 4:
                         def = 0.5;
                         break;
+
                     case 5:
                         def = 1;
                         break;
+
                     case 6:
                         def = 1.5;
                         break;
+
                     default:
                         def = 0;
                         break;
@@ -137,7 +134,6 @@ namespace SportLife
                 this.protein.Text = ((tdeee + def * 0.2) / 4).ToString("F0");
                 this.fat.Text = ((tdeee + def * 0.25) / 9).ToString("F0");
                 this.carbs.Text = ((tdeee + def * 0.55) / 4).ToString("F0");
-
 
                 databaseEntities db = new databaseEntities();
 
@@ -157,21 +153,17 @@ namespace SportLife
                                select x);
 
                 macrosandtdee o = query_2.SingleOrDefault();
-                o.wtdee = (int)tdeee ;
+                o.wtdee = (int)tdeee;
                 o.deficyt = (int)(def * 1100);
                 o.needeat = (int)(tdeee + def * 1100);
                 o.protein = (int)((tdeee + def * 0.2) / 4);
                 o.fat = (int)((tdeee + def * 0.25) / 9);
                 o.carbs = (int)((tdeee + def * 0.55) / 4);
 
-
                 db.SaveChanges();
-
-
             }
-           
-         
         }
+
         /// <summary>
         /// Allows the user enter only the numbers in weight textbox
         /// </summary>
@@ -179,8 +171,8 @@ namespace SportLife
         private void weight_previewtextinput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
-           
         }
+
         /// <summary>
         /// allows the user enter only the numbers in age textbox
         /// </summary>
@@ -189,6 +181,7 @@ namespace SportLife
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
         }
+
         /// <summary>
         /// allows the user enter only the numbers in height textbox
         /// </summary>
@@ -197,7 +190,5 @@ namespace SportLife
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
         }
-
-
     }
 }

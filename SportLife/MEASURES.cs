@@ -17,11 +17,29 @@ namespace SportLife
     /// </summary>
     public partial class MEASURES
     {
+        /// <summary>
+        /// Gets or sets the id.
+        /// </summary>
         public int Id { get; set; }
+        /// <summary>
+        /// Gets or sets the weight.
+        /// </summary>
         public Nullable<int> weight { get; set; }
+        /// <summary>
+        /// Gets or sets the age.
+        /// </summary>
         public Nullable<int> age { get; set; }
+        /// <summary>
+        /// Gets or sets the height.
+        /// </summary>
         public Nullable<int> height { get; set; }
+        /// <summary>
+        /// Gets or sets the activity.
+        /// </summary>
         public Nullable<int> activity { get; set; }
+        /// <summary>
+        /// Gets or sets the weightchange.
+        /// </summary>
         public Nullable<int> weightchange { get; set; }
     }
 }

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="dba598e1-902f-4c80-954d-b2ba3c7811a6" Title="SportLife" Url="html/9653e9a4-c12b-f5e5-8a4b-1074186a8d85.htm">
+    <HelpTOCNode Id="3522218f-a0a0-4201-887f-67a300d790e5" Title="App Class" Url="html/7ef542fb-4ce6-7d76-bb12-48a00c152043.htm">
+      <HelpTOCNode Title="App Constructor " Url="html/9318dd7b-6ca1-81ea-fbe1-3828bae1e939.htm" />
+      <HelpTOCNode Title="App Properties" Url="html/64ea0393-b5a8-9d1d-aed8-2dc6bcbcfc04.htm" />
+      <HelpTOCNode Id="3fc08b08-616a-4ba5-83fe-9dfe0ff72433" Title="App Methods" Url="html/3a74acb1-4628-ab56-c473-7bc7962451af.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/c660a602-5c9c-be59-d820-cf1a519c1d04.htm" />
+        <HelpTOCNode Title="Main Method " Url="html/43611538-7454-551c-9b1f-0f96920eddc4.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="App Events" Url="html/7ec4d126-d6b6-3c86-c753-8fbd1a30f031.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0bdd30d3-8988-4a04-b39b-aa624993fef7" Title="databaseEntities Class" Url="html/bee59ba9-db71-f583-a7be-2b58a2ef800e.htm">
+      <HelpTOCNode Title="databaseEntities Constructor " Url="html/70a81aed-30af-d3f4-96b3-a19cf62c060e.htm" />
+      <HelpTOCNode Id="2f17dbea-945f-4df7-ad6c-dc03fe15ebb2" Title="databaseEntities Properties" Url="html/fc14f67c-0124-be6a-00f5-ea5717ea2ef3.htm">
+        <HelpTOCNode Title="macrosandtdee Property " Url="html/c3a65b65-474b-300b-5cb3-00650ca1e826.htm" />
+        <HelpTOCNode Title="MEASURES Property " Url="html/e2b85de5-9d62-ecd1-a22a-c11c155c4873.htm" />
+        <HelpTOCNode Title="RUNSSTATISTICS Property " Url="html/6f45f116-91ff-34ae-0e4c-2ad9ef642294.htm" />
+        <HelpTOCNode Title="statisticRuns Property " Url="html/2810b926-6844-f6b4-6be2-400a83468238.htm" />
+        <HelpTOCNode Title="TDEEDATA Property " Url="html/7edfc7a0-3c5b-0312-c3d3-95b6419364c2.htm" />
+        <HelpTOCNode Title="users Property " Url="html/11bec7e8-dbe3-3bef-a96f-f327ac617368.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b343b783-2c34-4cb0-a78a-dd8e370b00a3" Title="databaseEntities Methods" Url="html/45001e02-ed93-fb6e-f19c-b8c93e343b28.htm">
+        <HelpTOCNode Title="OnModelCreating Method " Url="html/719c218b-4418-1cfb-ffb3-81f020884e1e.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3ce7af5e-8c87-4bf7-8e0c-9aede927c048" Title="login Class" Url="html/5640b6a5-0f0d-a40b-a4c2-a2f76f65ea5f.htm">
+      <HelpTOCNode Title="login Constructor " Url="html/f84d3249-5ce6-e194-a5ed-0fd00971a675.htm" />
+      <HelpTOCNode Title="login Properties" Url="html/8a9b357b-dee8-1360-17d9-a8063e961eb8.htm" />
+      <HelpTOCNode Id="35fda2bf-34c8-4e9d-8b5a-db3c87964ba6" Title="login Methods" Url="html/1b9682e1-4590-5933-7522-935e63b6a443.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/77db1bb7-3e70-755a-1433-362d89e49108.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="login Events" Url="html/bcd3a500-b44a-f251-6c59-9e4f9e1f3311.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="7e836454-5947-44bc-94a5-4d0cf4d498d2" Title="macrosandtdee Class" Url="html/76a40e6b-8043-b0c0-550a-0eb78da7ef8c.htm">
+      <HelpTOCNode Title="macrosandtdee Constructor " Url="html/155ce42c-639d-0616-f5b2-35ba3ef72c09.htm" />
+      <HelpTOCNode Id="9def3cd0-1b1d-40d4-b8be-63e08ba72d66" Title="macrosandtdee Properties" Url="html/774aca80-5461-d86f-2a14-7d9e984347ee.htm">
+        <HelpTOCNode Title="carbs Property " Url="html/20e425fb-1dba-fc16-e47c-2633e3d32004.htm" />
+        <HelpTOCNode Title="deficyt Property " Url="html/68644784-b93c-b2ce-eb83-43cb85a93466.htm" />
+        <HelpTOCNode Title="fat Property " Url="html/b6a6041d-a6cc-3c26-5536-ad9e7d2d9c4f.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/1d41bf8a-763b-d7ef-2865-76cf5aa63b43.htm" />
+        <HelpTOCNode Title="needeat Property " Url="html/71631c06-9a96-0588-116c-c03690427e5b.htm" />
+        <HelpTOCNode Title="protein Property " Url="html/29f1912d-d6bf-2431-e59b-fcc9bb6241ce.htm" />
+        <HelpTOCNode Title="wtdee Property " Url="html/e69765cb-69d6-1d2d-f548-b2feb48083f4.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="macrosandtdee Methods" Url="html/7c7d14a6-b259-fb76-11ff-3048933b3280.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="7b6d5ecc-caf0-44cc-a512-825f92894c0a" Title="MainWindow Class" Url="html/7b2f090b-0a2e-53eb-72a4-002518c5fa7d.htm">
+      <HelpTOCNode Title="MainWindow Constructor " Url="html/9a9a6809-99c2-5d0d-abb8-a72ebe2aa361.htm" />
+      <HelpTOCNode Id="af16b509-7ec7-4183-94a1-cb6e9f1cc6d8" Title="MainWindow Properties" Url="html/c59c4797-36ac-4e12-850b-6d6b3536eb9a.htm">
+        <HelpTOCNode Title="currentuserID Property " Url="html/987106a9-bc55-cba5-850e-1ff5267c4d96.htm" />
+        <HelpTOCNode Title="isLoggedIn Property " Url="html/420e7012-bebf-772f-2461-87f2df556350.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8564b3ed-decb-42f3-8eeb-f41d747a5086" Title="MainWindow Methods" Url="html/531fec1c-e266-3d28-c869-ba0c197ab681.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/099b8659-6bc2-a715-bee2-b87e23903e5a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MainWindow Events" Url="html/2aa22f2f-65c9-8b30-af77-dca26b7ce3b4.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="6e6f5bf1-6dbc-4ede-8833-c686647fe7b7" Title="MEASURES Class" Url="html/364feef0-2614-d2b3-a83e-fc221fa26592.htm">
+      <HelpTOCNode Title="MEASURES Constructor " Url="html/0f9d0adb-2827-6a90-71fc-66f6286a5288.htm" />
+      <HelpTOCNode Id="2f37ed27-a0d8-409c-9f8b-4e38e09d6290" Title="MEASURES Properties" Url="html/57745541-9fa8-17f6-db44-6b3b7965e54e.htm">
+        <HelpTOCNode Title="activity Property " Url="html/32002fb9-deea-e9bb-78da-7b2be9fa6e9c.htm" />
+        <HelpTOCNode Title="age Property " Url="html/bbc8b3cf-e5ec-ba6c-6e33-4d46289e7318.htm" />
+        <HelpTOCNode Title="height Property " Url="html/413df08c-6d5b-78e9-f7ca-74fb28e2de8c.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/e8949262-e95f-58d6-1e39-0c725ebf8f7e.htm" />
+        <HelpTOCNode Title="weight Property " Url="html/9ebe5961-1d21-71a9-eb10-026bc97d892f.htm" />
+        <HelpTOCNode Title="weightchange Property " Url="html/2156fc4e-5e79-5142-da27-696c61899af9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MEASURES Methods" Url="html/b3f142c9-387f-e50b-a985-40acdf2ecb30.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="7f4d5871-4905-45d0-939b-e5f1720cf8a6" Title="register Class" Url="html/a76f1805-fc2b-bf5b-8a3b-46f5a40ef57c.htm">
+      <HelpTOCNode Title="register Constructor " Url="html/2b2e57ba-82d5-4272-27d9-a4c78a1ca303.htm" />
+      <HelpTOCNode Title="register Properties" Url="html/cdce5370-053a-9a02-8e2d-b8c8c0681da8.htm" />
+      <HelpTOCNode Id="e7506eed-d17d-43c8-b385-3d941c2b31c0" Title="register Methods" Url="html/46b8ae7a-3fb9-1ec8-935a-8094f4967474.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/c99e3e69-294d-e3e5-fb07-1c7f88e33b03.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="register Events" Url="html/b631d5c6-641b-78e6-e5b9-c77121013de1.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="d1f2c225-0c55-48e0-bebd-57b3688f2a37" Title="running Class" Url="html/f0de12e4-43da-e2c1-531c-0e23414faee3.htm">
+      <HelpTOCNode Title="running Constructor " Url="html/5848d278-de34-69b6-5745-cac304304f10.htm" />
+      <HelpTOCNode Title="running Properties" Url="html/75199237-e541-25fd-db51-3f367548af44.htm" />
+      <HelpTOCNode Id="34106b64-8a7c-4150-9aea-3d2d19db1605" Title="running Methods" Url="html/6a45a66d-e001-41e2-3275-902c68d139e9.htm">
+        <HelpTOCNode Title="AddButton_Click Method " Url="html/30eab49c-14bb-08c8-a619-879aabbdc454.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/a6a0ad8d-2e03-a606-8da8-3721e175608b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="running Events" Url="html/8340e71e-3d69-0de9-44de-4315b9b88d8a.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="85fafc8e-8153-46f9-9cba-25f4e846d7de" Title="RUNSSTATISTICS Class" Url="html/c509ba1f-be8c-f6f0-362e-cdca826d9647.htm">
+      <HelpTOCNode Title="RUNSSTATISTICS Constructor " Url="html/4fcb3cb9-1679-3867-8abf-adf2077a8e0c.htm" />
+      <HelpTOCNode Id="33cce79e-846b-4eb9-835f-0f3d3d7a82ab" Title="RUNSSTATISTICS Properties" Url="html/cefb429a-c45a-a6b2-0037-be87ca34e56a.htm">
+        <HelpTOCNode Title="date Property " Url="html/5b8332c1-45f5-2390-319d-3e00a8e8275b.htm" />
+        <HelpTOCNode Title="distance Property " Url="html/a59d7340-7626-5762-fdd2-c34a4dcebbff.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/f0dee94a-8889-5d05-07b6-5db1c522b055.htm" />
+        <HelpTOCNode Title="time Property " Url="html/c20bae2b-3358-d242-776a-fd438075deaa.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="RUNSSTATISTICS Methods" Url="html/101a8fc3-0782-97e9-640c-d8afbcadce3d.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="1bd95709-908a-4686-b729-4c1e32cdbe7a" Title="statisticRuns Class" Url="html/672294a4-d208-4fa2-81c4-b88af2f0f595.htm">
+      <HelpTOCNode Title="statisticRuns Constructor " Url="html/11e99b7f-0b66-db72-4dd1-20c8084e8e61.htm" />
+      <HelpTOCNode Id="0687657a-b86c-4036-93ad-840855b01a19" Title="statisticRuns Properties" Url="html/06284db0-874b-860d-8c04-a423aebf1871.htm">
+        <HelpTOCNode Title="date Property " Url="html/0a866a55-9635-fb67-3b6c-a6e8547f4cab.htm" />
+        <HelpTOCNode Title="distance Property " Url="html/b5a76905-d446-5b8a-5390-86eccb28b675.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/b47059a9-f1c8-24bc-d2f9-2b93d01f521d.htm" />
+        <HelpTOCNode Title="time Property " Url="html/29a5ccc2-a89a-b825-b5f5-64d33a4da3df.htm" />
+        <HelpTOCNode Title="userID Property " Url="html/1e0f159a-1062-2b51-0893-c356ee54a447.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="statisticRuns Methods" Url="html/589a40c8-f4d1-000c-5d56-69134180e6f9.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="f045d017-c8d1-4f95-9476-4c17bf64d7ca" Title="tdee Class" Url="html/fcd98cd7-cba1-cef8-b580-97ceed7b8756.htm">
+      <HelpTOCNode Title="tdee Constructor " Url="html/499908e2-b27f-4477-01b4-fc7be5963397.htm" />
+      <HelpTOCNode Title="tdee Properties" Url="html/86981569-b4a8-0558-8529-dd9f68304fe7.htm" />
+      <HelpTOCNode Id="8e1d8300-2250-48d9-b6e8-4a55a5ec3584" Title="tdee Methods" Url="html/862858d2-9f37-65f9-2669-60a460ffb1e4.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/d94ff051-6bda-89d4-e1fb-6d37b218e188.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="tdee Events" Url="html/24641f4a-dcd0-e900-6b00-be6f9b1ba270.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="60243ca9-34b0-4cc1-a524-9431d4fc6f50" Title="TDEEDATA Class" Url="html/0bca84ee-094c-03cd-888a-58af7b3b24a3.htm">
+      <HelpTOCNode Title="TDEEDATA Constructor " Url="html/03090c53-2580-fadf-f1f3-f067d6725b17.htm" />
+      <HelpTOCNode Id="60b35e96-9bb6-4d28-87c3-5766df910582" Title="TDEEDATA Properties" Url="html/1d5d73b3-9d57-5e0c-d673-c821ff563546.htm">
+        <HelpTOCNode Title="age Property " Url="html/d37849f7-a980-0a37-7832-f445de915f13.htm" />
+        <HelpTOCNode Title="height Property " Url="html/01f149e5-e0ab-07af-fae9-b4f5bebd6e24.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/67d26258-fd2e-373b-4054-4486add790be.htm" />
+        <HelpTOCNode Title="weight Property " Url="html/380ac6e0-a135-dc0d-89fa-27d643d644c0.htm" />
+        <HelpTOCNode Title="weightchange Property " Url="html/03b0e9f8-6436-b6bf-2c23-9a0a86f0ed74.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="TDEEDATA Methods" Url="html/e87c2ea2-6118-6ee9-e42b-d105f9570d09.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="64937315-24b8-4fb8-8ca7-92062ea90604" Title="timer Class" Url="html/ab193b59-c647-eb17-ca94-95e11c47a24f.htm">
+      <HelpTOCNode Title="timer Constructor " Url="html/c4ad1b4c-bc25-4750-0d81-cf4b28ddc3ef.htm" />
+      <HelpTOCNode Title="timer Properties" Url="html/170286e2-ce06-7b29-49a7-658c167b9336.htm" />
+      <HelpTOCNode Id="a463f3b7-af11-4dd7-abf7-dd2bfbe8c000" Title="timer Methods" Url="html/d067b064-a952-5c63-360a-ce1dc1ca5e43.htm">
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/7b87fb90-f8c7-5b3b-7135-565da649ada4.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="timer Events" Url="html/0bf2fcf7-b04f-744f-9c5e-e64838d5cb58.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="cb56920e-cc82-4a3a-b349-eee7d0542808" Title="users Class" Url="html/18456ea4-4002-325a-3155-e47da4558baf.htm">
+      <HelpTOCNode Title="users Constructor " Url="html/3d525ec1-4e63-46be-e8c6-a0569f0e61b8.htm" />
+      <HelpTOCNode Id="d92fc0b0-68eb-4ef5-94b8-d6bdd5574043" Title="users Properties" Url="html/09ac4c98-9f73-3466-1814-0b7314a70897.htm">
+        <HelpTOCNode Title="Id Property " Url="html/876f2014-6f02-265b-651b-4bc5dd2e1449.htm" />
+        <HelpTOCNode Title="login Property " Url="html/55c28dc3-d1e4-6a88-44e7-1ae9ec79d9ac.htm" />
+        <HelpTOCNode Title="password Property " Url="html/c5c0b848-0f85-bb8d-b306-04884f330a73.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="users Methods" Url="html/2e32a967-6c10-7623-f2ff-d2b39febeb9c.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

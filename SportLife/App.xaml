@@ -1,17 +1,15 @@
 ﻿<Application x:Class="SportLife.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:SportLife"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
         <ResourceDictionary>
-            
+
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Simple Styles.xaml"/>
-                <ResourceDictionary Source="buttontheme.xaml"/>
+                <ResourceDictionary Source="Simple Styles.xaml" />
+                <ResourceDictionary Source="buttontheme.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-
     </Application.Resources>
 </Application>

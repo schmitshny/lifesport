@@ -1,19 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+ using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Xceed.Wpf.Toolkit;
 
 namespace SportLife
 {
@@ -25,8 +15,7 @@ namespace SportLife
         /// <summary>
         /// Establish connection with database
         /// </summary>
-        databaseEntities db = new databaseEntities();
-
+        private databaseEntities db = new databaseEntities();
 
         /// <summary>
         /// Constructor which loads our runs statistics in datagrid
@@ -39,17 +28,15 @@ namespace SportLife
 
             var stats = from d in db.statisticRuns
                         where d.userID == mw.currentuserID
-                     select d;
-            
+                        select d;
 
             this.gridruns.ItemsSource = stats.ToList();
-            startingDate.SelectedDate = new DateTime(2021,01,01);
+            startingDate.SelectedDate = new DateTime(2021, 01, 01);
             endDate.SelectedDate = DateTime.Today;
-
         }
 
         /// <summary>
-        /// Adding our run stats to database 
+        /// Adding our run stats to database
         /// </summary>
         /// <param name="sender">The object which invoked the method/event/delegate</param>
         /// <param name="e">State information and event data associated with a routed event.</param>
@@ -57,42 +44,32 @@ namespace SportLife
         {
             var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
 
-
             if (this.distTextbox.Text == "" || this.timeTextBox.Text == "")
             {
                 Xceed.Wpf.Toolkit.MessageBox.Show("Please enter all data");
-                
             }
             else
             {
+                statisticRuns newRecord = new statisticRuns()
+                {
+                    distance = int.Parse(distTextbox.Text),
+                    time = TimeSpan.ParseExact(timeTextBox.Text, "hh\\:mm\\:ss", null),
+                    date = Calendar.SelectedDate,
+                    userID = mw.currentuserID
+                };
 
-            
-            statisticRuns newRecord = new statisticRuns()
-            {
-                distance = int.Parse(distTextbox.Text),
-                time = TimeSpan.ParseExact(timeTextBox.Text, "hh\\:mm\\:ss", null),
-                date = Calendar.SelectedDate,
-                userID = mw.currentuserID
-                
-            };
-
-            db.statisticRuns.Add(newRecord);
-            db.SaveChanges();
+                db.statisticRuns.Add(newRecord);
+                db.SaveChanges();
 
                 var stats = from d in db.statisticRuns
                             where d.userID == mw.currentuserID
                             select d;
 
-
                 this.gridruns.ItemsSource = stats.ToList();
             }
         }
 
-
-
-
         private int updatingRunID = 0;
-
 
         /// <summary>
         /// Show data which that we select in textboxes for updates
@@ -101,11 +78,11 @@ namespace SportLife
         /// <param name="e">State information and event data associated with a routed event.</param>
         private void gridruns_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(this.gridruns.SelectedIndex>=0)
+            if (this.gridruns.SelectedIndex >= 0)
             {
-                if(this.gridruns.SelectedItems.Count>=0)
+                if (this.gridruns.SelectedItems.Count >= 0)
                 {
-                    if(this.gridruns.SelectedItems[0].GetType()==typeof(statisticRuns))
+                    if (this.gridruns.SelectedItems[0].GetType() == typeof(statisticRuns))
                     {
                         statisticRuns x = (statisticRuns)this.gridruns.SelectedItems[0];
                         this.distTextboxUpadte.Text = x.distance.ToString(); ;
@@ -113,9 +90,10 @@ namespace SportLife
                         this.DateUpdate.SelectedDate = x.date;
                         this.updatingRunID = x.Id;
                     }
-                }    
+                }
             }
         }
+
         /// <summary>
         /// Updates selected items and stores in database
         /// </summary>
@@ -131,7 +109,7 @@ namespace SportLife
 
             statisticRuns obj = x.SingleOrDefault();
 
-            if(obj!=null)
+            if (obj != null)
             {
                 obj.distance = int.Parse(distTextboxUpadte.Text);
                 obj.time = TimeSpan.ParseExact(timeTextboxUpdate.Text, "hh\\:mm\\:ss", null);
@@ -142,12 +120,11 @@ namespace SportLife
                         where d.userID == mw.currentuserID
                         select d;
 
-
             this.gridruns.ItemsSource = stats.ToList();
         }
 
         /// <summary>
-        /// Deletes selected data from database 
+        /// Deletes selected data from database
         /// </summary>
         /// <param name="sender">The object which invoked the method/event/delegate</param>
         /// <param name="e">State information and event data associated with a routed event.</param>
@@ -169,10 +146,8 @@ namespace SportLife
                         where d.userID == mw.currentuserID
                         select d;
 
-
             this.gridruns.ItemsSource = stats.ToList();
         }
-
 
         /// <summary>
         /// allows the user enter only the numbers in distance textbox
@@ -190,12 +165,12 @@ namespace SportLife
             var mw = Application.Current.Windows.Cast<Window>().FirstOrDefault(win => win is MainWindow) as MainWindow;
 
             var stats = from d in db.statisticRuns
-                        where d.date >= startingDate.SelectedDate && d.date <=endDate.SelectedDate && d.userID==mw.currentuserID
+                        where d.date >= startingDate.SelectedDate && d.date <= endDate.SelectedDate && d.userID == mw.currentuserID
                         select d;
 
             this.gridruns.ItemsSource = stats.ToList();
-
         }
+
         /// <summary>
         /// Changes data in datagrid and shows items which values ​​matching the date range
         /// </summary>

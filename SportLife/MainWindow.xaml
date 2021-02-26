@@ -4,42 +4,37 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        
+
         xmlns:local="clr-namespace:SportLife"
         ResizeMode="NoResize"
         mc:Ignorable="d"
-       
+
         Title="MainWindow" Height="700" Width="900">
     <Grid>
-        <Frame x:Name="Main" Margin="170 0 0 0" NavigationUIVisibility="Hidden"/>
-        <Rectangle Fill="#FF06062E" HorizontalAlignment="Left" Height="0" Margin="65.8,65.4,0,0" VerticalAlignment="Top" Width="12"/>
-        <Rectangle Fill="#FF94114A" HorizontalAlignment="Left" Height="670.8" VerticalAlignment="Top" Width="170"/>
-        <TextBlock HorizontalAlignment="Center" Height="59.2" Margin="-3,523.1,729,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Foreground="Black" FontWeight="Bold" Opacity="0.6" TextAlignment="Center" FontFamily="helvetica" FontSize="14"><Run Text="Calculate your"/><LineBreak/><Run Text="calories consumption"/></TextBlock>
-        <Button x:Name="tdee"  HorizontalAlignment="Left" Margin="33.3,420.9,0,0" VerticalAlignment="Top" Width="101.4" Height="88.4" Click="TDEEbuttonclick"  >
+        <Frame x:Name="Main" Margin="170 0 0 0" NavigationUIVisibility="Hidden" />
+        <Rectangle Fill="#FF06062E" HorizontalAlignment="Left" Height="0" Margin="65.8,65.4,0,0" VerticalAlignment="Top" Width="12" />
+        <Rectangle Fill="#FF94114A" HorizontalAlignment="Left" Height="670.8" VerticalAlignment="Top" Width="170" />
+        <TextBlock HorizontalAlignment="Center" Height="59.2" Margin="-3,523.1,729,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Foreground="Black" FontWeight="Bold" Opacity="0.6" TextAlignment="Center" FontFamily="helvetica" FontSize="14"><Run Text="Calculate your" /><LineBreak /><Run Text="calories consumption" /></TextBlock>
+        <Button x:Name="tdee"  HorizontalAlignment="Left" Margin="33.3,420.9,0,0" VerticalAlignment="Top" Width="101.4" Height="88.4" Click="TDEEbuttonclick">
             <Button.Background>
-                <ImageBrush ImageSource="scales.png"/>
+                <ImageBrush ImageSource="scales.png" />
             </Button.Background>
         </Button>
-        <Button x:Name="running" Content="" HorizontalAlignment="Left" Margin="33.3,248,0,0" VerticalAlignment="Top" Width="101.4" Click="RunningButtonclick" Height="86.36" BorderBrush="#FF94114A"
-                >
+        <Button x:Name="running" Content="" HorizontalAlignment="Left" Margin="33.3,248,0,0" VerticalAlignment="Top" Width="101.4" Click="RunningButtonclick" Height="86.36" BorderBrush="#FF94114A">
             <Button.Background>
-                <ImageBrush ImageSource="runicon.png"/>
+                <ImageBrush ImageSource="runicon.png" />
             </Button.Background>
         </Button>
         <TextBlock HorizontalAlignment="Center" Height="59.2" Margin="0,339.36,726,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Foreground="Black" FontWeight="Bold" TextAlignment="Center" FontFamily="helvetica" FontSize="14" Text="Your running trainings"
-                   Opacity="0.6"/>
-        <Button x:Name="timer" Content="" HorizontalAlignment="Left" Margin="33.3,65.4,0,0" VerticalAlignment="Top" Width="101.4" Click="timer_Click" Height="97.56" BorderBrush="#FF94114A"
-                  >
+                   Opacity="0.6" />
+        <Button x:Name="timer" Content="" HorizontalAlignment="Left" Margin="33.3,65.4,0,0" VerticalAlignment="Top" Width="101.4" Click="timer_Click" Height="97.56" BorderBrush="#FF94114A">
             <Button.Background>
-                <ImageBrush ImageSource="stopwatch.png"/>
+                <ImageBrush ImageSource="stopwatch.png" />
             </Button.Background>
         </Button>
         <TextBlock HorizontalAlignment="Center" Height="59.2" Margin="-3,167.96,729,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Foreground="Black" FontWeight="Bold" TextAlignment="Center" FontFamily="helvetica" FontSize="14" Text="Stopwatch"
-            Opacity="0.6"/>
+            Opacity="0.6" />
         <Button x:Name="logoutbutton" Content="Log out" HorizontalAlignment="Left" Margin="33.3,603.2,0,0" VerticalAlignment="Top" Width="101.4" Height="35.2" Background="Black" FontWeight="Bold"
-                Click="logoutbutton_Click"/>
+                Click="logoutbutton_Click" />
     </Grid>
-
-
-
 </Window>

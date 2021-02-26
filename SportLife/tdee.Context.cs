@@ -12,24 +12,52 @@ namespace SportLife
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+
+    /// <summary>
+    /// The database entities.
+    /// </summary>
     public partial class databaseEntities : DbContext
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="databaseEntities"/> class.
+        /// </summary>
         public databaseEntities()
             : base("name=databaseEntities")
         {
         }
-    
+
+        /// <summary>
+        /// Ons the model creating.
+        /// </summary>
+        /// <param name="modelBuilder">The model builder.</param>
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
-    
+
+        /// <summary>
+        /// Gets or sets the macrosandtdee.
+        /// </summary>
         public virtual DbSet<macrosandtdee> macrosandtdee { get; set; }
+        /// <summary>
+        /// Gets or sets the m e a s u r e s.
+        /// </summary>
         public virtual DbSet<MEASURES> MEASURES { get; set; }
+        /// <summary>
+        /// Gets or sets the r u n s s t a t i s t i c s.
+        /// </summary>
         public virtual DbSet<RUNSSTATISTICS> RUNSSTATISTICS { get; set; }
+        /// <summary>
+        /// Gets or sets the t d e e d a t a.
+        /// </summary>
         public virtual DbSet<TDEEDATA> TDEEDATA { get; set; }
+        /// <summary>
+        /// Gets or sets the users.
+        /// </summary>
         public virtual DbSet<users> users { get; set; }
+        /// <summary>
+        /// Gets or sets the statistic runs.
+        /// </summary>
         public virtual DbSet<statisticRuns> statisticRuns { get; set; }
     }
 }

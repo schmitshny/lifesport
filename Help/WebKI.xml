@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="activity property" Url="html/32002fb9-deea-e9bb-78da-7b2be9fa6e9c.htm" />
+  <HelpKINode Title="AddButton_Click method" Url="html/30eab49c-14bb-08c8-a619-879aabbdc454.htm" />
+  <HelpKINode Title="age property">
+    <HelpKINode Title="MEASURES.age Property " Url="html/bbc8b3cf-e5ec-ba6c-6e33-4d46289e7318.htm" />
+    <HelpKINode Title="TDEEDATA.age Property " Url="html/d37849f7-a980-0a37-7832-f445de915f13.htm" />
+  </HelpKINode>
+  <HelpKINode Title="App class">
+    <HelpKINode Title="App Class" Url="html/7ef542fb-4ce6-7d76-bb12-48a00c152043.htm" />
+    <HelpKINode Title="constructor" Url="html/9318dd7b-6ca1-81ea-fbe1-3828bae1e939.htm" />
+    <HelpKINode Title="events" Url="html/7ec4d126-d6b6-3c86-c753-8fbd1a30f031.htm" />
+    <HelpKINode Title="methods" Url="html/3a74acb1-4628-ab56-c473-7bc7962451af.htm" />
+    <HelpKINode Title="properties" Url="html/64ea0393-b5a8-9d1d-aed8-2dc6bcbcfc04.htm" />
+  </HelpKINode>
+  <HelpKINode Title="App.App constructor" Url="html/9318dd7b-6ca1-81ea-fbe1-3828bae1e939.htm" />
+  <HelpKINode Title="App.InitializeComponent method" Url="html/c660a602-5c9c-be59-d820-cf1a519c1d04.htm" />
+  <HelpKINode Title="App.Main method" Url="html/43611538-7454-551c-9b1f-0f96920eddc4.htm" />
+  <HelpKINode Title="carbs property" Url="html/20e425fb-1dba-fc16-e47c-2633e3d32004.htm" />
+  <HelpKINode Title="currentuserID property" Url="html/987106a9-bc55-cba5-850e-1ff5267c4d96.htm" />
+  <HelpKINode Title="databaseEntities class">
+    <HelpKINode Title="databaseEntities Class" Url="html/bee59ba9-db71-f583-a7be-2b58a2ef800e.htm" />
+    <HelpKINode Title="constructor" Url="html/70a81aed-30af-d3f4-96b3-a19cf62c060e.htm" />
+    <HelpKINode Title="methods" Url="html/45001e02-ed93-fb6e-f19c-b8c93e343b28.htm" />
+    <HelpKINode Title="properties" Url="html/fc14f67c-0124-be6a-00f5-ea5717ea2ef3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="databaseEntities.databaseEntities constructor" Url="html/70a81aed-30af-d3f4-96b3-a19cf62c060e.htm" />
+  <HelpKINode Title="databaseEntities.macrosandtdee property" Url="html/c3a65b65-474b-300b-5cb3-00650ca1e826.htm" />
+  <HelpKINode Title="databaseEntities.MEASURES property" Url="html/e2b85de5-9d62-ecd1-a22a-c11c155c4873.htm" />
+  <HelpKINode Title="databaseEntities.OnModelCreating method" Url="html/719c218b-4418-1cfb-ffb3-81f020884e1e.htm" />
+  <HelpKINode Title="databaseEntities.RUNSSTATISTICS property" Url="html/6f45f116-91ff-34ae-0e4c-2ad9ef642294.htm" />
+  <HelpKINode Title="databaseEntities.statisticRuns property" Url="html/2810b926-6844-f6b4-6be2-400a83468238.htm" />
+  <HelpKINode Title="databaseEntities.TDEEDATA property" Url="html/7edfc7a0-3c5b-0312-c3d3-95b6419364c2.htm" />
+  <HelpKINode Title="databaseEntities.users property" Url="html/11bec7e8-dbe3-3bef-a96f-f327ac617368.htm" />
+  <HelpKINode Title="date property">
+    <HelpKINode Title="RUNSSTATISTICS.date Property " Url="html/5b8332c1-45f5-2390-319d-3e00a8e8275b.htm" />
+    <HelpKINode Title="statisticRuns.date Property " Url="html/0a866a55-9635-fb67-3b6c-a6e8547f4cab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="deficyt property" Url="html/68644784-b93c-b2ce-eb83-43cb85a93466.htm" />
+  <HelpKINode Title="distance property">
+    <HelpKINode Title="RUNSSTATISTICS.distance Property " Url="html/a59d7340-7626-5762-fdd2-c34a4dcebbff.htm" />
+    <HelpKINode Title="statisticRuns.distance Property " Url="html/b5a76905-d446-5b8a-5390-86eccb28b675.htm" />
+  </HelpKINode>
+  <HelpKINode Title="fat property" Url="html/b6a6041d-a6cc-3c26-5536-ad9e7d2d9c4f.htm" />
+  <HelpKINode Title="height property">
+    <HelpKINode Title="MEASURES.height Property " Url="html/413df08c-6d5b-78e9-f7ca-74fb28e2de8c.htm" />
+    <HelpKINode Title="TDEEDATA.height Property " Url="html/01f149e5-e0ab-07af-fae9-b4f5bebd6e24.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Id property">
+    <HelpKINode Title="macrosandtdee.Id Property " Url="html/1d41bf8a-763b-d7ef-2865-76cf5aa63b43.htm" />
+    <HelpKINode Title="MEASURES.Id Property " Url="html/e8949262-e95f-58d6-1e39-0c725ebf8f7e.htm" />
+    <HelpKINode Title="RUNSSTATISTICS.Id Property " Url="html/f0dee94a-8889-5d05-07b6-5db1c522b055.htm" />
+    <HelpKINode Title="statisticRuns.Id Property " Url="html/b47059a9-f1c8-24bc-d2f9-2b93d01f521d.htm" />
+    <HelpKINode Title="TDEEDATA.Id Property " Url="html/67d26258-fd2e-373b-4054-4486add790be.htm" />
+    <HelpKINode Title="users.Id Property " Url="html/876f2014-6f02-265b-651b-4bc5dd2e1449.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InitializeComponent method">
+    <HelpKINode Title="App.InitializeComponent Method " Url="html/c660a602-5c9c-be59-d820-cf1a519c1d04.htm" />
+    <HelpKINode Title="login.InitializeComponent Method " Url="html/77db1bb7-3e70-755a-1433-362d89e49108.htm" />
+    <HelpKINode Title="MainWindow.InitializeComponent Method " Url="html/099b8659-6bc2-a715-bee2-b87e23903e5a.htm" />
+    <HelpKINode Title="register.InitializeComponent Method " Url="html/c99e3e69-294d-e3e5-fb07-1c7f88e33b03.htm" />
+    <HelpKINode Title="running.InitializeComponent Method " Url="html/a6a0ad8d-2e03-a606-8da8-3721e175608b.htm" />
+    <HelpKINode Title="tdee.InitializeComponent Method " Url="html/d94ff051-6bda-89d4-e1fb-6d37b218e188.htm" />
+    <HelpKINode Title="timer.InitializeComponent Method " Url="html/7b87fb90-f8c7-5b3b-7135-565da649ada4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="isLoggedIn property" Url="html/420e7012-bebf-772f-2461-87f2df556350.htm" />
+  <HelpKINode Title="login class">
+    <HelpKINode Title="login Class" Url="html/5640b6a5-0f0d-a40b-a4c2-a2f76f65ea5f.htm" />
+    <HelpKINode Title="constructor" Url="html/f84d3249-5ce6-e194-a5ed-0fd00971a675.htm" />
+    <HelpKINode Title="events" Url="html/bcd3a500-b44a-f251-6c59-9e4f9e1f3311.htm" />
+    <HelpKINode Title="methods" Url="html/1b9682e1-4590-5933-7522-935e63b6a443.htm" />
+    <HelpKINode Title="properties" Url="html/8a9b357b-dee8-1360-17d9-a8063e961eb8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="login property" Url="html/55c28dc3-d1e4-6a88-44e7-1ae9ec79d9ac.htm" />
+  <HelpKINode Title="login.InitializeComponent method" Url="html/77db1bb7-3e70-755a-1433-362d89e49108.htm" />
+  <HelpKINode Title="login.login constructor" Url="html/f84d3249-5ce6-e194-a5ed-0fd00971a675.htm" />
+  <HelpKINode Title="macrosandtdee class">
+    <HelpKINode Title="macrosandtdee Class" Url="html/76a40e6b-8043-b0c0-550a-0eb78da7ef8c.htm" />
+    <HelpKINode Title="constructor" Url="html/155ce42c-639d-0616-f5b2-35ba3ef72c09.htm" />
+    <HelpKINode Title="methods" Url="html/7c7d14a6-b259-fb76-11ff-3048933b3280.htm" />
+    <HelpKINode Title="properties" Url="html/774aca80-5461-d86f-2a14-7d9e984347ee.htm" />
+  </HelpKINode>
+  <HelpKINode Title="macrosandtdee property" Url="html/c3a65b65-474b-300b-5cb3-00650ca1e826.htm" />
+  <HelpKINode Title="macrosandtdee.carbs property" Url="html/20e425fb-1dba-fc16-e47c-2633e3d32004.htm" />
+  <HelpKINode Title="macrosandtdee.deficyt property" Url="html/68644784-b93c-b2ce-eb83-43cb85a93466.htm" />
+  <HelpKINode Title="macrosandtdee.fat property" Url="html/b6a6041d-a6cc-3c26-5536-ad9e7d2d9c4f.htm" />
+  <HelpKINode Title="macrosandtdee.Id property" Url="html/1d41bf8a-763b-d7ef-2865-76cf5aa63b43.htm" />
+  <HelpKINode Title="macrosandtdee.macrosandtdee constructor" Url="html/155ce42c-639d-0616-f5b2-35ba3ef72c09.htm" />
+  <HelpKINode Title="macrosandtdee.needeat property" Url="html/71631c06-9a96-0588-116c-c03690427e5b.htm" />
+  <HelpKINode Title="macrosandtdee.protein property" Url="html/29f1912d-d6bf-2431-e59b-fcc9bb6241ce.htm" />
+  <HelpKINode Title="macrosandtdee.wtdee property" Url="html/e69765cb-69d6-1d2d-f548-b2feb48083f4.htm" />
+  <HelpKINode Title="Main method" Url="html/43611538-7454-551c-9b1f-0f96920eddc4.htm" />
+  <HelpKINode Title="MainWindow class">
+    <HelpKINode Title="MainWindow Class" Url="html/7b2f090b-0a2e-53eb-72a4-002518c5fa7d.htm" />
+    <HelpKINode Title="constructor" Url="html/9a9a6809-99c2-5d0d-abb8-a72ebe2aa361.htm" />
+    <HelpKINode Title="events" Url="html/2aa22f2f-65c9-8b30-af77-dca26b7ce3b4.htm" />
+    <HelpKINode Title="methods" Url="html/531fec1c-e266-3d28-c869-ba0c197ab681.htm" />
+    <HelpKINode Title="properties" Url="html/c59c4797-36ac-4e12-850b-6d6b3536eb9a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainWindow.currentuserID property" Url="html/987106a9-bc55-cba5-850e-1ff5267c4d96.htm" />
+  <HelpKINode Title="MainWindow.InitializeComponent method" Url="html/099b8659-6bc2-a715-bee2-b87e23903e5a.htm" />
+  <HelpKINode Title="MainWindow.isLoggedIn property" Url="html/420e7012-bebf-772f-2461-87f2df556350.htm" />
+  <HelpKINode Title="MainWindow.MainWindow constructor" Url="html/9a9a6809-99c2-5d0d-abb8-a72ebe2aa361.htm" />
+  <HelpKINode Title="MEASURES class">
+    <HelpKINode Title="MEASURES Class" Url="html/364feef0-2614-d2b3-a83e-fc221fa26592.htm" />
+    <HelpKINode Title="constructor" Url="html/0f9d0adb-2827-6a90-71fc-66f6286a5288.htm" />
+    <HelpKINode Title="methods" Url="html/b3f142c9-387f-e50b-a985-40acdf2ecb30.htm" />
+    <HelpKINode Title="properties" Url="html/57745541-9fa8-17f6-db44-6b3b7965e54e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MEASURES property" Url="html/e2b85de5-9d62-ecd1-a22a-c11c155c4873.htm" />
+  <HelpKINode Title="MEASURES.activity property" Url="html/32002fb9-deea-e9bb-78da-7b2be9fa6e9c.htm" />
+  <HelpKINode Title="MEASURES.age property" Url="html/bbc8b3cf-e5ec-ba6c-6e33-4d46289e7318.htm" />
+  <HelpKINode Title="MEASURES.height property" Url="html/413df08c-6d5b-78e9-f7ca-74fb28e2de8c.htm" />
+  <HelpKINode Title="MEASURES.Id property" Url="html/e8949262-e95f-58d6-1e39-0c725ebf8f7e.htm" />
+  <HelpKINode Title="MEASURES.MEASURES constructor" Url="html/0f9d0adb-2827-6a90-71fc-66f6286a5288.htm" />
+  <HelpKINode Title="MEASURES.weight property" Url="html/9ebe5961-1d21-71a9-eb10-026bc97d892f.htm" />
+  <HelpKINode Title="MEASURES.weightchange property" Url="html/2156fc4e-5e79-5142-da27-696c61899af9.htm" />
+  <HelpKINode Title="needeat property" Url="html/71631c06-9a96-0588-116c-c03690427e5b.htm" />
+  <HelpKINode Title="OnModelCreating method" Url="html/719c218b-4418-1cfb-ffb3-81f020884e1e.htm" />
+  <HelpKINode Title="password property" Url="html/c5c0b848-0f85-bb8d-b306-04884f330a73.htm" />
+  <HelpKINode Title="protein property" Url="html/29f1912d-d6bf-2431-e59b-fcc9bb6241ce.htm" />
+  <HelpKINode Title="register class">
+    <HelpKINode Title="register Class" Url="html/a76f1805-fc2b-bf5b-8a3b-46f5a40ef57c.htm" />
+    <HelpKINode Title="constructor" Url="html/2b2e57ba-82d5-4272-27d9-a4c78a1ca303.htm" />
+    <HelpKINode Title="events" Url="html/b631d5c6-641b-78e6-e5b9-c77121013de1.htm" />
+    <HelpKINode Title="methods" Url="html/46b8ae7a-3fb9-1ec8-935a-8094f4967474.htm" />
+    <HelpKINode Title="properties" Url="html/cdce5370-053a-9a02-8e2d-b8c8c0681da8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="register.InitializeComponent method" Url="html/c99e3e69-294d-e3e5-fb07-1c7f88e33b03.htm" />
+  <HelpKINode Title="register.register constructor" Url="html/2b2e57ba-82d5-4272-27d9-a4c78a1ca303.htm" />
+  <HelpKINode Title="running class">
+    <HelpKINode Title="running Class" Url="html/f0de12e4-43da-e2c1-531c-0e23414faee3.htm" />
+    <HelpKINode Title="constructor" Url="html/5848d278-de34-69b6-5745-cac304304f10.htm" />
+    <HelpKINode Title="events" Url="html/8340e71e-3d69-0de9-44de-4315b9b88d8a.htm" />
+    <HelpKINode Title="methods" Url="html/6a45a66d-e001-41e2-3275-902c68d139e9.htm" />
+    <HelpKINode Title="properties" Url="html/75199237-e541-25fd-db51-3f367548af44.htm" />
+  </HelpKINode>
+  <HelpKINode Title="running.AddButton_Click method" Url="html/30eab49c-14bb-08c8-a619-879aabbdc454.htm" />
+  <HelpKINode Title="running.InitializeComponent method" Url="html/a6a0ad8d-2e03-a606-8da8-3721e175608b.htm" />
+  <HelpKINode Title="running.running constructor" Url="html/5848d278-de34-69b6-5745-cac304304f10.htm" />
+  <HelpKINode Title="RUNSSTATISTICS class">
+    <HelpKINode Title="RUNSSTATISTICS Class" Url="html/c509ba1f-be8c-f6f0-362e-cdca826d9647.htm" />
+    <HelpKINode Title="constructor" Url="html/4fcb3cb9-1679-3867-8abf-adf2077a8e0c.htm" />
+    <HelpKINode Title="methods" Url="html/101a8fc3-0782-97e9-640c-d8afbcadce3d.htm" />
+    <HelpKINode Title="properties" Url="html/cefb429a-c45a-a6b2-0037-be87ca34e56a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RUNSSTATISTICS property" Url="html/6f45f116-91ff-34ae-0e4c-2ad9ef642294.htm" />
+  <HelpKINode Title="RUNSSTATISTICS.date property" Url="html/5b8332c1-45f5-2390-319d-3e00a8e8275b.htm" />
+  <HelpKINode Title="RUNSSTATISTICS.distance property" Url="html/a59d7340-7626-5762-fdd2-c34a4dcebbff.htm" />
+  <HelpKINode Title="RUNSSTATISTICS.Id property" Url="html/f0dee94a-8889-5d05-07b6-5db1c522b055.htm" />
+  <HelpKINode Title="RUNSSTATISTICS.RUNSSTATISTICS constructor" Url="html/4fcb3cb9-1679-3867-8abf-adf2077a8e0c.htm" />
+  <HelpKINode Title="RUNSSTATISTICS.time property" Url="html/c20bae2b-3358-d242-776a-fd438075deaa.htm" />
+  <HelpKINode Title="SportLife namespace" Url="html/9653e9a4-c12b-f5e5-8a4b-1074186a8d85.htm" />
+  <HelpKINode Title="SportLife.App class" Url="html/7ef542fb-4ce6-7d76-bb12-48a00c152043.htm" />
+  <HelpKINode Title="SportLife.databaseEntities class" Url="html/bee59ba9-db71-f583-a7be-2b58a2ef800e.htm" />
+  <HelpKINode Title="SportLife.login class" Url="html/5640b6a5-0f0d-a40b-a4c2-a2f76f65ea5f.htm" />
+  <HelpKINode Title="SportLife.macrosandtdee class" Url="html/76a40e6b-8043-b0c0-550a-0eb78da7ef8c.htm" />
+  <HelpKINode Title="SportLife.MainWindow class" Url="html/7b2f090b-0a2e-53eb-72a4-002518c5fa7d.htm" />
+  <HelpKINode Title="SportLife.MEASURES class" Url="html/364feef0-2614-d2b3-a83e-fc221fa26592.htm" />
+  <HelpKINode Title="SportLife.register class" Url="html/a76f1805-fc2b-bf5b-8a3b-46f5a40ef57c.htm" />
+  <HelpKINode Title="SportLife.running class" Url="html/f0de12e4-43da-e2c1-531c-0e23414faee3.htm" />
+  <HelpKINode Title="SportLife.RUNSSTATISTICS class" Url="html/c509ba1f-be8c-f6f0-362e-cdca826d9647.htm" />
+  <HelpKINode Title="SportLife.statisticRuns class" Url="html/672294a4-d208-4fa2-81c4-b88af2f0f595.htm" />
+  <HelpKINode Title="SportLife.tdee class" Url="html/fcd98cd7-cba1-cef8-b580-97ceed7b8756.htm" />
+  <HelpKINode Title="SportLife.TDEEDATA class" Url="html/0bca84ee-094c-03cd-888a-58af7b3b24a3.htm" />
+  <HelpKINode Title="SportLife.timer class" Url="html/ab193b59-c647-eb17-ca94-95e11c47a24f.htm" />
+  <HelpKINode Title="SportLife.users class" Url="html/18456ea4-4002-325a-3155-e47da4558baf.htm" />
+  <HelpKINode Title="statisticRuns class">
+    <HelpKINode Title="statisticRuns Class" Url="html/672294a4-d208-4fa2-81c4-b88af2f0f595.htm" />
+    <HelpKINode Title="constructor" Url="html/11e99b7f-0b66-db72-4dd1-20c8084e8e61.htm" />
+    <HelpKINode Title="methods" Url="html/589a40c8-f4d1-000c-5d56-69134180e6f9.htm" />
+    <HelpKINode Title="properties" Url="html/06284db0-874b-860d-8c04-a423aebf1871.htm" />
+  </HelpKINode>
+  <HelpKINode Title="statisticRuns property" Url="html/2810b926-6844-f6b4-6be2-400a83468238.htm" />
+  <HelpKINode Title="statisticRuns.date property" Url="html/0a866a55-9635-fb67-3b6c-a6e8547f4cab.htm" />
+  <HelpKINode Title="statisticRuns.distance property" Url="html/b5a76905-d446-5b8a-5390-86eccb28b675.htm" />
+  <HelpKINode Title="statisticRuns.Id property" Url="html/b47059a9-f1c8-24bc-d2f9-2b93d01f521d.htm" />
+  <HelpKINode Title="statisticRuns.statisticRuns constructor" Url="html/11e99b7f-0b66-db72-4dd1-20c8084e8e61.htm" />
+  <HelpKINode Title="statisticRuns.time property" Url="html/29a5ccc2-a89a-b825-b5f5-64d33a4da3df.htm" />
+  <HelpKINode Title="statisticRuns.userID property" Url="html/1e0f159a-1062-2b51-0893-c356ee54a447.htm" />
+  <HelpKINode Title="tdee class">
+    <HelpKINode Title="tdee Class" Url="html/fcd98cd7-cba1-cef8-b580-97ceed7b8756.htm" />
+    <HelpKINode Title="constructor" Url="html/499908e2-b27f-4477-01b4-fc7be5963397.htm" />
+    <HelpKINode Title="events" Url="html/24641f4a-dcd0-e900-6b00-be6f9b1ba270.htm" />
+    <HelpKINode Title="methods" Url="html/862858d2-9f37-65f9-2669-60a460ffb1e4.htm" />
+    <HelpKINode Title="properties" Url="html/86981569-b4a8-0558-8529-dd9f68304fe7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="tdee.InitializeComponent method" Url="html/d94ff051-6bda-89d4-e1fb-6d37b218e188.htm" />
+  <HelpKINode Title="tdee.tdee constructor" Url="html/499908e2-b27f-4477-01b4-fc7be5963397.htm" />
+  <HelpKINode Title="TDEEDATA class">
+    <HelpKINode Title="TDEEDATA Class" Url="html/0bca84ee-094c-03cd-888a-58af7b3b24a3.htm" />
+    <HelpKINode Title="constructor" Url="html/03090c53-2580-fadf-f1f3-f067d6725b17.htm" />
+    <HelpKINode Title="methods" Url="html/e87c2ea2-6118-6ee9-e42b-d105f9570d09.htm" />
+    <HelpKINode Title="properties" Url="html/1d5d73b3-9d57-5e0c-d673-c821ff563546.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TDEEDATA property" Url="html/7edfc7a0-3c5b-0312-c3d3-95b6419364c2.htm" />
+  <HelpKINode Title="TDEEDATA.age property" Url="html/d37849f7-a980-0a37-7832-f445de915f13.htm" />
+  <HelpKINode Title="TDEEDATA.height property" Url="html/01f149e5-e0ab-07af-fae9-b4f5bebd6e24.htm" />
+  <HelpKINode Title="TDEEDATA.Id property" Url="html/67d26258-fd2e-373b-4054-4486add790be.htm" />
+  <HelpKINode Title="TDEEDATA.TDEEDATA constructor" Url="html/03090c53-2580-fadf-f1f3-f067d6725b17.htm" />
+  <HelpKINode Title="TDEEDATA.weight property" Url="html/380ac6e0-a135-dc0d-89fa-27d643d644c0.htm" />
+  <HelpKINode Title="TDEEDATA.weightchange property" Url="html/03b0e9f8-6436-b6bf-2c23-9a0a86f0ed74.htm" />
+  <HelpKINode Title="time property">
+    <HelpKINode Title="RUNSSTATISTICS.time Property " Url="html/c20bae2b-3358-d242-776a-fd438075deaa.htm" />
+    <HelpKINode Title="statisticRuns.time Property " Url="html/29a5ccc2-a89a-b825-b5f5-64d33a4da3df.htm" />
+  </HelpKINode>
+  <HelpKINode Title="timer class">
+    <HelpKINode Title="timer Class" Url="html/ab193b59-c647-eb17-ca94-95e11c47a24f.htm" />
+    <HelpKINode Title="constructor" Url="html/c4ad1b4c-bc25-4750-0d81-cf4b28ddc3ef.htm" />
+    <HelpKINode Title="events" Url="html/0bf2fcf7-b04f-744f-9c5e-e64838d5cb58.htm" />
+    <HelpKINode Title="methods" Url="html/d067b064-a952-5c63-360a-ce1dc1ca5e43.htm" />
+    <HelpKINode Title="properties" Url="html/170286e2-ce06-7b29-49a7-658c167b9336.htm" />
+  </HelpKINode>
+  <HelpKINode Title="timer.InitializeComponent method" Url="html/7b87fb90-f8c7-5b3b-7135-565da649ada4.htm" />
+  <HelpKINode Title="timer.timer constructor" Url="html/c4ad1b4c-bc25-4750-0d81-cf4b28ddc3ef.htm" />
+  <HelpKINode Title="userID property" Url="html/1e0f159a-1062-2b51-0893-c356ee54a447.htm" />
+  <HelpKINode Title="users class">
+    <HelpKINode Title="users Class" Url="html/18456ea4-4002-325a-3155-e47da4558baf.htm" />
+    <HelpKINode Title="constructor" Url="html/3d525ec1-4e63-46be-e8c6-a0569f0e61b8.htm" />
+    <HelpKINode Title="methods" Url="html/2e32a967-6c10-7623-f2ff-d2b39febeb9c.htm" />
+    <HelpKINode Title="properties" Url="html/09ac4c98-9f73-3466-1814-0b7314a70897.htm" />
+  </HelpKINode>
+  <HelpKINode Title="users property" Url="html/11bec7e8-dbe3-3bef-a96f-f327ac617368.htm" />
+  <HelpKINode Title="users.Id property" Url="html/876f2014-6f02-265b-651b-4bc5dd2e1449.htm" />
+  <HelpKINode Title="users.login property" Url="html/55c28dc3-d1e4-6a88-44e7-1ae9ec79d9ac.htm" />
+  <HelpKINode Title="users.password property" Url="html/c5c0b848-0f85-bb8d-b306-04884f330a73.htm" />
+  <HelpKINode Title="users.users constructor" Url="html/3d525ec1-4e63-46be-e8c6-a0569f0e61b8.htm" />
+  <HelpKINode Title="weight property">
+    <HelpKINode Title="MEASURES.weight Property " Url="html/9ebe5961-1d21-71a9-eb10-026bc97d892f.htm" />
+    <HelpKINode Title="TDEEDATA.weight Property " Url="html/380ac6e0-a135-dc0d-89fa-27d643d644c0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="weightchange property">
+    <HelpKINode Title="MEASURES.weightchange Property " Url="html/2156fc4e-5e79-5142-da27-696c61899af9.htm" />
+    <HelpKINode Title="TDEEDATA.weightchange Property " Url="html/03b0e9f8-6436-b6bf-2c23-9a0a86f0ed74.htm" />
+  </HelpKINode>
+  <HelpKINode Title="wtdee property" Url="html/e69765cb-69d6-1d2d-f548-b2feb48083f4.htm" />
+</HelpKI>

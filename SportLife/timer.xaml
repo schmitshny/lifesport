@@ -1,22 +1,21 @@
 ﻿<Page x:Class="SportLife.timer"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:SportLife"
-      mc:Ignorable="d" 
+      mc:Ignorable="d"
       d:DesignHeight="700" d:DesignWidth="730"
       Title="timer">
 
     <Grid>
-        <Rectangle Fill="#FF130020" HorizontalAlignment="Left" Height="700" VerticalAlignment="Top" Width="730"/>
+        <Rectangle Fill="#FF130020" HorizontalAlignment="Left" Height="700" VerticalAlignment="Top" Width="730" />
         <Button x:Name="StartButton" Content="START" HorizontalAlignment="Left" Margin="50.4,499.5,0,0" VerticalAlignment="Top" Width="197.4" Height="66.4"
-                Click="StartButton_Click"/>
+                Click="StartButton_Click" />
         <Button x:Name="StopButton" Content="STOP" HorizontalAlignment="Left" Margin="270,499.5,0,0" VerticalAlignment="Top" Width="197.4" Height="66.4"
-                Click="StopButton_Click"/>
+                Click="StopButton_Click" />
         <Button x:Name="ResetButton" Content="RESET" HorizontalAlignment="Left" Margin="487.2,499.5,0,0" VerticalAlignment="Top" Width="197.4" Height="66.4"
-                Click="ResetButton_Click"/>
-        <TextBlock x:Name="stopwatchText" HorizontalAlignment="Left" Margin="122.71,197.1,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Height="170.76" Width="607.29" FontSize="130" Foreground="#FF7C3C3C"/>
-
+                Click="ResetButton_Click" />
+        <TextBlock x:Name="stopwatchText" HorizontalAlignment="Left" Margin="122.71,197.1,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top" Height="170.76" Width="607.29" FontSize="130" Foreground="#FF7C3C3C" />
     </Grid>
 </Page>

@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace SportLife
 {
@@ -20,12 +9,16 @@ namespace SportLife
     /// </summary>
     public partial class register : Page
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="register"/> class.
+        /// </summary>
         public register()
         {
             InitializeComponent();
         }
+
         /// <summary>
-        /// Registers new user, stores user login and password in database 
+        /// Registers new user, stores user login and password in database
         /// </summary>
         /// <param name="sender">The object which invoked the method/event/delegate</param>
         /// <param name="e">State information and event data associated with a routed event.</param>
@@ -35,33 +28,32 @@ namespace SportLife
 
             var usernameexists = from d in db.users
                                  where d.login == username.Text
-                                 select d;
+                                 select d.login;
 
-            if(username.Text.Length==0)
+            if (username.Text.Length == 0)
             {
                 Xceed.Wpf.Toolkit.MessageBox.Show("Enter a login");
                 username.Focus();
             }
-            else if(pass.Password.Length==0)
+            else if (pass.Password.Length == 0)
             {
                 Xceed.Wpf.Toolkit.MessageBox.Show("Enter a password");
                 pass.Focus();
             }
-            else if (confirmpass.Password.Length==0)
+            else if (confirmpass.Password.Length == 0)
             {
                 Xceed.Wpf.Toolkit.MessageBox.Show("Enter a password");
                 confirmpass.Focus();
             }
-            else if(pass.Password!=confirmpass.Password)
+            else if (pass.Password != confirmpass.Password)
             {
                 Xceed.Wpf.Toolkit.MessageBox.Show("Passwords are not the same");
                 pass.Focus();
             }
-            else if ( usernameexists!=null)
+            else if (usernameexists!=null)
             {
                 Xceed.Wpf.Toolkit.MessageBox.Show("Username is already taken");
                 username.Focus();
-
             }
             else
             {

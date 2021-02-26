@@ -17,8 +17,17 @@ namespace SportLife
     /// </summary>
     public partial class users
     {
+        /// <summary>
+        /// Gets or sets the id.
+        /// </summary>
         public int Id { get; set; }
+        /// <summary>
+        /// Gets or sets the login.
+        /// </summary>
         public string login { get; set; }
+        /// <summary>
+        /// Gets or sets the password.
+        /// </summary>
         public string password { get; set; }
     }
 }

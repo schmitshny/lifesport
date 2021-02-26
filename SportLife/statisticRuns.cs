@@ -17,10 +17,25 @@ namespace SportLife
     /// </summary>
     public partial class statisticRuns
     {
+        /// <summary>
+        /// Gets or sets the id.
+        /// </summary>
         public int Id { get; set; }
+        /// <summary>
+        /// Gets or sets the distance.
+        /// </summary>
         public Nullable<int> distance { get; set; }
+        /// <summary>
+        /// Gets or sets the time.
+        /// </summary>
         public Nullable<System.TimeSpan> time { get; set; }
+        /// <summary>
+        /// Gets or sets the date.
+        /// </summary>
         public Nullable<System.DateTime> date { get; set; }
+        /// <summary>
+        /// Gets or sets the user i d.
+        /// </summary>
         public Nullable<int> userID { get; set; }
     }
 }
